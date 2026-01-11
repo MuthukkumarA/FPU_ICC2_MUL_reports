@@ -1,0 +1,173 @@
+****************************************
+Report : check_mv_design
+        -erc_mode
+        -voltage_threshold 0
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:02:50 2025
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+Warning: Supply state(s) has not been defined on the supply net 'VDD'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'VDDo'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'VSS'. (MV-099)
+Information: Total 3 MV-099 violations. (MV-080)
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+Warning: Found redundant level shifter 'se_mul64_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'rclk_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'grst_l_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'arst_l_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'fmul_clken_l_buf1_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'fmul_clken_l_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_exp_neq_ffs_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_exp_eq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_53_32_neq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_50_0_neq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_53_0_neq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_51__UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_52__UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_53__UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_54__UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in2_63__UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in1_exp_neq_ffs_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in1_exp_eq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in1_53_32_neq_0_UPF_LS'. (MV-015)
+Warning: Found redundant level shifter 'inq_in1_50_0_neq_0_UPF_LS'. (MV-015)
+Information: Message 'MV-015' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 163 MV-015 violations. (MV-080)
+
+Error: The input supply net 'VDDo' of the level shifter 'se_mul64_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'rclk_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'grst_l_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'arst_l_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'fmul_clken_l_buf1_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'fmul_clken_l_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_exp_neq_ffs_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_exp_eq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_53_32_neq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_50_0_neq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_53_0_neq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_51__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_52__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_53__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_54__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in2_63__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in1_exp_neq_ffs_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in1_exp_eq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in1_53_32_neq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDo' of the level shifter 'inq_in1_50_0_neq_0_UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Information: Message 'MV-045' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 163 MV-045 violations. (MV-080)
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+Warning: Driver pin 'inq_op[7]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[6]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_1/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[5]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_2/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[4]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_3/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[3]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_4/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[2]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_5/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[1]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_6/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_op[0]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_7/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_rnd_mode[1]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_8/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_rnd_mode[0]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_9/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_id[4]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_10/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_id[3]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_11/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_id[2]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_12/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_id[1]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_13/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_id[0]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_14/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_in1[63]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_15/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_in1[62]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_16/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_in1[61]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_17/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_in1[60]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_18/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'inq_in1[59]' [supply net 'VDDo', power state 'UNDEFINED'] is less always-on than the load pin 'eco_cell_19/A' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Information: Message 'MV-013' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 411 MV-013 violations. (MV-080)
+
+---------- Voltage shifting rule ----------
+Warning: Driver pin 'inq_op[7]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[6]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_1/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[5]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_2/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[4]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_3/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[3]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_4/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[2]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_5/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[1]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_6/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_op[0]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_7/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_rnd_mode[1]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_8/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_rnd_mode[0]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_9/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_id[4]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_10/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_id[3]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_11/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_id[2]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_12/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_id[1]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_13/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_id[0]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_14/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_in1[63]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_15/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_in1[62]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_16/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_in1[61]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_17/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_in1[60]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_18/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'inq_in1[59]' (supply net 'VDDo' [<undef>V]) cannot drive load pin 'eco_cell_19/A' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Information: Message 'MV-012' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 411 MV-012 violations. (MV-080)
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Signal pin rule ----------
+No errors or warnings.
+
+---------- Summary ----------
+Information: Total 163 error(s) and 988 warning(s) from check_mv_design. (MV-082)
+0

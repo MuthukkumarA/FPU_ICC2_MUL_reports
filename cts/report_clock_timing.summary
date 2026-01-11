@@ -1,0 +1,73 @@
+Information: Timer using 1 threads
+****************************************
+Report : clock timing
+        -type summary
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:24:46 2025
+****************************************
+
+  Mode: func_mode
+  Clock: rclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      i_m4stg_frac/pcout_dff/q_reg_11_/CK                      0.25       rp-+   ss0p72v125c
+
+  Minimum setup capture latency:
+      fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK        0.07       rp-+   ss0p72v125c
+
+  Minimum hold launch latency:
+      fpu_mul_exp_dp/ckbuf_mul_exp_dp/clken_reg/G              0.07       fp-    ss0p72v125c
+
+  Maximum hold capture latency:
+      i_m4stg_frac/pcout_dff/q_reg_11_/CK                      0.25       rp-+   ss0p72v125c
+
+  Maximum active transition:
+      i_m4stg_frac/pcout_dff/q_reg_24_/CK                      0.05       rp-+   ss0p72v125c
+
+  Minimum active transition:
+      i_m4stg_frac/booth/out_dff7/q_reg_1_/CK                  0.01       rp-+   ss0p72v125c
+
+  Maximum setup skew:
+      i_m4stg_frac/out_dff/q_reg_41_/CK                                   rp-+   ss0p72v125c
+      fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK           0.17       rp-+   ss0p72v125c
+
+  Maximum hold skew:
+      i_m4stg_frac/co31_dff/q_reg_0_/CK                                   rp-+   ss0p72v125c
+      i_m4stg_frac/out_dff/q_reg_41_/CK                        0.14       rp-+   ss0p72v125c
+
+
+
+  Mode: turbo_mode
+  Clock: rclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      i_m4stg_frac/pcout_dff/q_reg_11_/CK                      0.23       rp-+   ss0p72vm40c
+
+  Minimum setup capture latency:
+      fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK        0.07       rp-+   ss0p72vm40c
+
+  Minimum hold launch latency:
+      fpu_mul_exp_dp/ckbuf_mul_exp_dp/clken_reg/G              0.06       fp-    ss0p72vm40c
+
+  Maximum hold capture latency:
+      i_m4stg_frac/pcout_dff/q_reg_11_/CK                      0.23       rp-+   ss0p72vm40c
+
+  Maximum active transition:
+      i_m4stg_frac/pcout_dff/q_reg_24_/CK                      0.04       rp-+   ss0p72vm40c
+
+  Minimum active transition:
+      i_m4stg_frac/booth/out_dff7/q_reg_1_/CK                  0.01       rp-+   ss0p72vm40c
+
+  Maximum setup skew:
+      i_m4stg_frac/out_dff/q_reg_41_/CK                                   rp-+   ss0p72vm40c
+      fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK           0.16       rp-+   ss0p72vm40c
+
+  Maximum hold skew:
+      i_m4stg_frac/co31_dff/q_reg_0_/CK                                   rp-+   ss0p72vm40c
+      i_m4stg_frac/out_dff/q_reg_41_/CK                        0.13       rp-+   ss0p72vm40c
+
+
+1

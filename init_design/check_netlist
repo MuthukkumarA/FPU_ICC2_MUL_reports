@@ -1,0 +1,28 @@
+****************************************
+Report : check_netlist
+        -cells
+        -nets
+        -ports
+        -summary
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Sun Aug 10 22:39:34 2025
+****************************************
+             Name                                                          Total
+--------------------------------------------------------------------------------
+Port                                                                        4448
+             (DCHK-003) Undriven hier pin with internal loads                  2
+             (DCHK-004) Hier pin without driver and load                     138
+             (DCHK-005) Power or ground to submodule                          59
+             (DCHK-017) Input port unloaded                                 3590
+             (DCHK-023) Output ports short                                     9
+             (DCHK-024) Zero width bus                                       264
+             (DCHK-027) Port/net name mismatch but same net exists           242
+             (DCHK-045) Output pin is floating                               144
+Net                                                                         9837
+             (DCHK-009) Net has no load                                     5524
+             (DCHK-010) Net has no driver                                   2238
+             (DCHK-021) Undriven output port                                2075
+--------------------------------------------------------------------------------
+Information: Use the related options for more information about warnings. (DCHK-042)
+1

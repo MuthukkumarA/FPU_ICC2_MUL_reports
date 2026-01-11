@@ -1,0 +1,30 @@
+Information: Timer using 1 threads
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 1
+        -setup
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:24:48 2025
+****************************************
+
+  Mode: func_mode
+  Clock: rclk
+
+                                                 --- Latency ---
+  Clock Pin                  Bal Dly    Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  i_m4stg_frac/pcout_dff/q_reg_9_/CK       --     0.03     0.00       --     0.25     0.25 rp-+ ss0p72v125c
+---------------------------------------------------------------------------------------------------
+
+  Mode: turbo_mode
+  Clock: rclk
+
+                                                 --- Latency ---
+  Clock Pin                  Bal Dly    Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  i_m4stg_frac/pcout_dff/q_reg_11_/CK       --     0.03     0.00       --     0.23     0.23 rp-+ ss0p72vm40c
+---------------------------------------------------------------------------------------------------
+1

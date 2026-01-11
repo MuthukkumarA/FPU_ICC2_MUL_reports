@@ -1,0 +1,19 @@
+****************************************
+Report : app_option
+           -non_default
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:02:58 2025
+****************************************
+Name                                     Type       Value      User-value   User-default System-default Scope      Status     Source
+---------------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- --------------------------
+formality.svf.integrate_in_ndm           bool       true       true         true         false          global     normal     /tmp/icc2_shell-2.yfPaLR:1
+gui.graphics_system                      enum       native     native       native       auto           global     normal     --
+mv.upf.enable_golden_upf                 bool       true       true         --           false          block      normal     --
+place.coarse.continue_on_missing_scandef bool       true       true         --           false          block      normal     /tmp/icc2_shell-2.lLwTAS:1
+place.coarse.max_density                 float      0.4        0.4          --           0              block      normal     /tmp/icc2_shell-2.qOBaCb:1
+shell.common.enable_line_editing         bool       false      false        false        true           global     normal     --
+---------------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- --------------------------
+
+There are additional internal differences with no available TBC source.
+1

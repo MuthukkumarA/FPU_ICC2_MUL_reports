@@ -1,0 +1,292 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Sun Aug 10 22:39:22 2025
+****************************************
+
+
+
+   Mode: func_mode Corner: ss0p72v125c
+   Scenario: func_mode::ss0p72v125c
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   m6stg_id_in[9]               0.10           0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/U99/X     0.10          0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U15/A1     0.10     0.14    -0.04 (VIOLATED) 
+     PORT: m6stg_id_in[9]       0.10           0.12          -0.02  (VIOLATED) 
+
+   m6stg_id_in[8]               0.10           0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/U102/X     0.10         0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U14/A1     0.10     0.14    -0.04 (VIOLATED) 
+     PORT: m6stg_id_in[8]       0.10           0.12          -0.02  (VIOLATED) 
+
+   m6stg_id_in[7]               0.10           0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/U104/X     0.10         0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U13/A1     0.10     0.14    -0.04 (VIOLATED) 
+     PORT: m6stg_id_in[7]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[6]               0.10           0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/U106/X     0.10         0.14          -0.04  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U12/A1     0.10     0.14    -0.04 (VIOLATED) 
+     PORT: m6stg_id_in[6]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[5]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U108/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U11/A1     0.10     0.13    -0.03 (VIOLATED) 
+     PORT: m6stg_id_in[5]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[4]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U109/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U10/A1     0.10     0.13    -0.03 (VIOLATED) 
+     PORT: m6stg_id_in[4]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[3]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U110/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U9/A1     0.10     0.13    -0.03  (VIOLATED) 
+     PORT: m6stg_id_in[3]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m1stg_step                   0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U51/X     0.10          0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U55/A2     0.10         0.13          -0.03  (VIOLATED) 
+     PORT: m1stg_step           0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[2]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U111/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U8/A1     0.10     0.13    -0.03  (VIOLATED) 
+     PORT: m6stg_id_in[2]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[1]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U112/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U7/A1     0.10     0.13    -0.03  (VIOLATED) 
+     PORT: m6stg_id_in[1]       0.10           0.11          -0.01  (VIOLATED) 
+
+   m6stg_id_in[0]               0.10           0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/U113/X     0.10         0.13          -0.03  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U6/A1     0.10     0.13    -0.03  (VIOLATED) 
+     PORT: m6stg_id_in[0]       0.10           0.11          -0.01  (VIOLATED) 
+
+   mul_exc_out[0]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U167/X     0.10         0.12          -0.02  (VIOLATED) 
+     PORT: mul_exc_out[0]       0.10           0.10          -0.00  (VIOLATED) 
+
+   fpu_mul_frac_dp/n1698        0.10           0.10          -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2180/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2194/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2193/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2192/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2191/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2190/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2189/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2188/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2187/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2186/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2185/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2184/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2183/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2182/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2181/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2138/X     0.10     0.10         -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2179/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2178/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2177/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2176/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2175/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2174/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2173/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2172/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2161/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2159/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2158/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2157/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2139/A2     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2195/A1     0.10     0.10        -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 13
+
+   Mode: turbo_mode Corner: ss0p72vm40c
+   Scenario: turbo_mode::ss0p72vm40c
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   m6stg_id_in[9]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U99/X     0.10          0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U15/A1     0.10     0.12    -0.02 (VIOLATED) 
+     PORT: m6stg_id_in[9]       0.10           0.10          -0.00  (VIOLATED) 
+
+   m6stg_id_in[8]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U102/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U14/A1     0.10     0.12    -0.02 (VIOLATED) 
+     PORT: m6stg_id_in[8]       0.10           0.10          -0.00  (VIOLATED) 
+
+   m6stg_id_in[7]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U104/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U13/A1     0.10     0.12    -0.02 (VIOLATED) 
+     PORT: m6stg_id_in[7]       0.10           0.10          -0.00  (VIOLATED) 
+
+   m6stg_id_in[6]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U106/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U12/A1     0.10     0.12    -0.02 (VIOLATED) 
+
+   m6stg_id_in[5]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U108/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U11/A1     0.10     0.12    -0.02 (VIOLATED) 
+
+   m6stg_id_in[4]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U109/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U10/A1     0.10     0.12    -0.02 (VIOLATED) 
+
+   m1stg_step                   0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U51/X     0.10          0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U55/A2     0.10         0.12          -0.02  (VIOLATED) 
+
+   m6stg_id_in[3]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U110/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U9/A1     0.10     0.12    -0.02  (VIOLATED) 
+
+   m6stg_id_in[2]               0.10           0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/U111/X     0.10         0.12          -0.02  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U8/A1     0.10     0.12    -0.02  (VIOLATED) 
+
+   m6stg_id_in[1]               0.10           0.11          -0.01  (VIOLATED) 
+     PIN : fpu_mul_ctl/U112/X     0.10         0.11          -0.01  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U7/A1     0.10     0.11    -0.01  (VIOLATED) 
+
+   m6stg_id_in[0]               0.10           0.11          -0.01  (VIOLATED) 
+     PIN : fpu_mul_ctl/U113/X     0.10         0.11          -0.01  (VIOLATED) 
+     PIN : fpu_mul_ctl/i_m6stg_id/U6/A1     0.10     0.11    -0.01  (VIOLATED) 
+
+   mul_exc_out[0]               0.10           0.11          -0.01  (VIOLATED) 
+     PIN : fpu_mul_ctl/U167/X     0.10         0.11          -0.01  (VIOLATED) 
+
+   fpu_mul_frac_dp/n1698        0.10           0.10          -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2180/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2194/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2193/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2192/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2191/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2190/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2189/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2188/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2187/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2186/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2185/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2184/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2183/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2182/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2181/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2138/X     0.10     0.10         -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2179/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2178/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2177/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2176/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2175/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2174/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2173/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2172/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2161/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2159/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2158/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2157/A1     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2139/A2     0.10     0.10        -0.00  (VIOLATED) 
+     PIN : fpu_mul_frac_dp/U2195/A1     0.10     0.10        -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 13
+
+   Mode: func_mode Corner: ss0p72v125c
+   Scenario: func_mode::ss0p72v125c
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   i_m4stg_frac/a2sum_dff/n98    20.72        53.15         -32.43  (VIOLATED) 
+     PIN : i_m4stg_frac/a2sum_dff/U3/X    20.72    53.15    -32.43  (VIOLATED) 
+
+   i_m4stg_frac/a2cot_dff/n110    20.72       50.98         -30.26  (VIOLATED) 
+     PIN : i_m4stg_frac/a2cot_dff/U3/X    20.72    50.98    -30.26  (VIOLATED) 
+
+   i_m4stg_frac/a1sum_dff/n82    20.72        44.48         -23.76  (VIOLATED) 
+     PIN : i_m4stg_frac/a1sum_dff/U3/X    20.72    44.48    -23.76  (VIOLATED) 
+
+   i_m4stg_frac/a0sum_dff/n81    20.72        43.93         -23.21  (VIOLATED) 
+     PIN : i_m4stg_frac/a0sum_dff/U3/X    20.72    43.93    -23.21  (VIOLATED) 
+
+   i_m4stg_frac/a1cot_dff/n76    20.72        41.22         -20.50  (VIOLATED) 
+     PIN : i_m4stg_frac/a1cot_dff/U3/X    20.72    41.22    -20.50  (VIOLATED) 
+
+   i_m4stg_frac/a0cot_dff/n76    20.72        41.22         -20.50  (VIOLATED) 
+     PIN : i_m4stg_frac/a0cot_dff/U3/X    20.72    41.22    -20.50  (VIOLATED) 
+
+   i_m4stg_frac/out_dff/n74    20.72          40.14         -19.42  (VIOLATED) 
+     PIN : i_m4stg_frac/out_dff/U3/X    20.72    40.14      -19.42  (VIOLATED) 
+
+   i_m4stg_frac/pcout_dff/n68    20.72        36.34         -15.62  (VIOLATED) 
+     PIN : i_m4stg_frac/pcout_dff/U3/X    20.72    36.34    -15.62  (VIOLATED) 
+
+   i_m4stg_frac/psum_dff/n68    20.72         36.34         -15.62  (VIOLATED) 
+     PIN : i_m4stg_frac/psum_dff/U3/X    20.72    36.34     -15.62  (VIOLATED) 
+
+   fpu_mul_frac_dp/i_m5stg_frac_pre3/n61    20.72    29.83    -9.11 (VIOLATED) 
+     PIN : fpu_mul_frac_dp/i_m5stg_frac_pre3/U3/X    20.72    29.83    -9.11 (VIOLATED)
+
+   fpu_mul_frac_dp/i_m5stg_frac_pre4/n62    20.72    29.83    -9.11 (VIOLATED) 
+     PIN : fpu_mul_frac_dp/i_m5stg_frac_pre4/U3/X    20.72    29.83    -9.11 (VIOLATED)
+
+   fpu_mul_frac_dp/i_m5stg_frac_pre2/n55    20.72    29.83    -9.11 (VIOLATED) 
+     PIN : fpu_mul_frac_dp/i_m5stg_frac_pre2/U3/X    20.72    29.83    -9.11 (VIOLATED)
+
+   fpu_mul_frac_dp/i_m5stg_frac_pre1/n55    20.72    29.83    -9.11 (VIOLATED) 
+     PIN : fpu_mul_frac_dp/i_m5stg_frac_pre1/U3/X    20.72    29.83    -9.11 (VIOLATED)
+
+   fpu_mul_frac_dp/i_mul_frac_in2/net18763    20.72    29.83    -9.11 (VIOLATED)
+     PIN : fpu_mul_frac_dp/i_mul_frac_in2/U3/X    20.72    29.83    -9.11 (VIOLATED)
+
+   fpu_mul_frac_dp/i_mul_frac_in1/net18763    20.72    29.83    -9.11 (VIOLATED)
+     PIN : fpu_mul_frac_dp/i_mul_frac_in1/U2/X    20.72    29.83    -9.11 (VIOLATED)
+
+   i_m4stg_frac/ffrs1/n54      20.72          28.75          -8.03  (VIOLATED) 
+     PIN : i_m4stg_frac/ffrs1/U3/X    20.72    28.75         -8.03  (VIOLATED) 
+
+   fpu_mul_frac_dp/i_mul_frac_out/net18727    20.72    28.20    -7.48 (VIOLATED)
+     PIN : fpu_mul_frac_dp/i_mul_frac_out/U2/X    20.72    28.20    -7.48 (VIOLATED)
+
+   m1stg_step                  17.62          19.52          -1.90  (VIOLATED) 
+     PIN : fpu_mul_ctl/U51/X    17.62         19.52          -1.90  (VIOLATED) 
+
+   m6stg_id_in[9]              17.81          19.06          -1.25  (VIOLATED) 
+     PIN : fpu_mul_ctl/U99/X    17.81         19.06          -1.25  (VIOLATED) 
+
+   m6stg_id_in[8]              17.81          18.91          -1.10  (VIOLATED) 
+     PIN : fpu_mul_ctl/U102/X    17.81        18.91          -1.10  (VIOLATED) 
+
+   m6stg_id_in[7]              17.81          18.77          -0.96  (VIOLATED) 
+     PIN : fpu_mul_ctl/U104/X    17.81        18.77          -0.96  (VIOLATED) 
+
+   m6stg_id_in[6]              17.81          18.62          -0.81  (VIOLATED) 
+     PIN : fpu_mul_ctl/U106/X    17.81        18.62          -0.81  (VIOLATED) 
+
+   m6stg_id_in[5]              17.81          18.46          -0.65  (VIOLATED) 
+     PIN : fpu_mul_ctl/U108/X    17.81        18.46          -0.65  (VIOLATED) 
+
+   m6stg_id_in[4]              17.81          18.30          -0.49  (VIOLATED) 
+     PIN : fpu_mul_ctl/U109/X    17.81        18.30          -0.49  (VIOLATED) 
+
+   m6stg_id_in[3]              17.81          18.15          -0.34  (VIOLATED) 
+     PIN : fpu_mul_ctl/U110/X    17.81        18.15          -0.34  (VIOLATED) 
+
+   m6stg_id_in[2]              17.81          17.97          -0.16  (VIOLATED) 
+     PIN : fpu_mul_ctl/U111/X    17.81        17.97          -0.16  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 26
+
+   Total number of violation(s): 52
+1

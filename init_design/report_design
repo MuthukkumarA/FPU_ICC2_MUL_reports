@@ -1,0 +1,366 @@
+****************************************
+Report : design
+        -library
+        -netlist
+        -floorplan
+        -nosplit
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Sun Aug 10 22:39:33 2025
+****************************************
+--------------------------------------------------------------------------------
+                              LIBRARY INFORMATION
+--------------------------------------------------------------------------------
+
+Search path : .
+
+Units : 
+    time                : 1.00ns
+    resistance          : 1.00MOhm
+    capacitance         : 1.00fF
+    voltage             : 1.00V
+    current             : 1.00uA
+    power               : 1.00pW
+
+Tech file : /home1/14_nmts/14_nmts/tech/milkyway/saed14nm_1p9m_mw.tf
+
+Number of active scenarios 	= 2
+Number of inactive scenarios 	= 0
+
+Total number of standard cells 	= 2020
+
+Total number of dont_use lib cells 	= 312
+Total number of dont_touch lib cells 	= 42
+
+Total number of buffers 	= 182
+Total number of inverters 	= 102
+Total number of flip-flops 	= 350
+Total number of latches 	= 90
+Total number of ICGs 		= 60
+
+
+Library : saed14lvt_ss0p72v125c
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14lvt_ss0p72v_c.ndm
+  Source .db libs :
+    saed14lvt_ss0p72v125c : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p72v125c.db
+    saed14lvt_ss0p72vm40c : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p72vm40c.db
+
+Library : saed14lvt_dlvl_ss0p72v125c_i0p6v
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14lvt_dlvl_ss0p72v_c_i0p6v.ndm
+  Source .db libs :
+    saed14lvt_dlvl_ss0p72v125c_i0p6v : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_dlvl_ss0p72v125c_i0p6v.db
+    saed14lvt_dlvl_ss0p72vm40c_i0p6v : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_dlvl_ss0p72vm40c_i0p6v.db
+
+Library : saed14lvt_ulvl_ss0p72v125c_i0p6v
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14lvt_ulvl_ss0p72v_c_i0p6v.ndm
+  Source .db libs :
+    saed14lvt_ulvl_ss0p72v125c_i0p6v : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ulvl_ss0p72v125c_i0p6v.db
+    saed14lvt_ulvl_ss0p72vm40c_i0p6v : /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ulvl_ss0p72vm40c_i0p6v.db
+
+Library : saed14rvt_ss0p72vm40c
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14rvt_ss0p72v_c.ndm
+  Source .db libs :
+    saed14rvt_ss0p72vm40c : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db
+    saed14rvt_ss0p72v125c : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p72v125c.db
+
+Library : saed14rvt_dlvl_ss0p72vm40c_i0p6v
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14rvt_dlvl_ss0p72v_c_i0p6v.ndm
+  Source .db libs :
+    saed14rvt_dlvl_ss0p72vm40c_i0p6v : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_dlvl_ss0p72vm40c_i0p6v.db
+    saed14rvt_dlvl_ss0p72v125c_i0p6v : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_dlvl_ss0p72v125c_i0p6v.db
+
+Library : saed14rvt_ulvl_ss0p72vm40c_i0p6v
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/saed14rvt_ulvl_ss0p72v_c_i0p6v.ndm
+  Source .db libs :
+    saed14rvt_ulvl_ss0p72vm40c_i0p6v : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ulvl_ss0p72vm40c_i0p6v.db
+    saed14rvt_ulvl_ss0p72v125c_i0p6v : /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ulvl_ss0p72v125c_i0p6v.db
+
+Library : EXPLORE_physical_only
+  File path : /home1/PD07/AMuthuKKumar/FPU/fpu_mul/ICCII/work/CLIBs/EXPLORE_physical_only.ndm
+
+--------------------------------------------------------------------------------
+                              NETLIST INFORMATION
+--------------------------------------------------------------------------------
+
+CELL INSTANCE INFORMATION
+-----------------------------------------------------------------------------
+Cell Instance Type          Count % of         Area  % of siteAreaPerSite
+                                  total             total
+-----------------------------------------------------------------------------
+TOTAL LEAF CELLS            13965  100     6952.951   100 unit:156598  
+
+  Standard cells            12812   91     6622.127    95 unit:149147  
+  Filler cells                  0    0        0.000     0 
+  Diode cells                   0    0        0.000     0 
+  Hard macro cells              0    0        0.000     0 
+  Soft macro cells              0    0        0.000     0 
+    Black box cells             0    0        0.000     0 
+  Analog block cells            0    0        0.000     0 
+  Pad cells                     0    0        0.000     0 
+    Flip-chip pad cells         0    0        0.000     0 
+  Cover cells                   0    0        0.000     0 
+  Flip-chip driver cells        0    0        0.000     0 
+  Corner pad cells              0    0        0.000     0 
+  Pad spacer cells              0    0        0.000     0 
+  Others                     1153    8      330.824     4 unit:7451  
+
+Special cells                 783    5      745.920    10 unit:16800  
+  Level shifter               163    1      608.280     8 unit:13700  
+  Isolation                     0    0        0.000     0 
+  Switch                        0    0        0.000     0 
+  Always on                     0    0        0.000     0 
+  Retention                     0    0        0.000     0 
+  Tie off                     620    4      137.640     1 unit:3100  
+
+LVT                             0    0        0.000     0 
+HVT                             0    0        0.000     0 
+Normal VT                       0    0        0.000     0 
+Others                      13965  100     6952.951   100 unit:156598  
+
+Netlist cells               12812   91     6622.127    95 unit:149147  
+Physical only                1153    8      330.824     4 unit:7451  
+
+Fixed cells                  1153    8      330.824     4 unit:7451  
+Moveable cells              12812   91     6622.127    95 unit:149147  
+
+Combinational               12320   88     5139.700    73 unit:115759  
+Sequential                   1645   11     1813.252    26 unit:40839  
+Others                          0    0        0.000     0 
+
+Buffer                        402    2      672.305     9 unit:15142  
+Inverter                      612    4      108.691     1 unit:2448  
+Buffer/inverter              1014    7      780.996    11 unit:17590  
+
+Spare cells                     0    0        0.000     0 
+ICG cells                      32    0       25.574     0 unit:576  
+Flip-flop cells              1607   11     1783.948    25 unit:40179  
+Latch cells                     6    0        3.730     0 unit:84  
+Antenna cells                   0    0        0.000     0 
+
+Mux logic                    1206    8      489.954     7 unit:11035  
+Double height                 163    1      608.280     8 unit:13700  
+Triple height                   0    0        0.000     0 
+More than triple height         0    0        0.000     0 
+
+Logic Hierarchies          2879
+
+REFERENCE DESIGN INFORMATION
+----------------------------------------------------------------------------------------------
+Number of reference designs used:63   
+----------------------------------------------------------------------------------------------
+Name           Type          Count     Width    Height        Area   PinDens SiteName siteArea
+----------------------------------------------------------------------------------------------
+SAEDRVT14_AN2_MM_1 lib_cell   2103      0.52      0.60       0.311    16.088 unit            7
+SAEDRVT14_FSDPQ_V2LP_1 lib_cell 1605      1.85      0.60       1.110     6.306 unit         25
+SAEDRVT14_OAI21_0P5 lib_cell  1267      0.44      0.60       0.266    22.523 unit            6
+SAEDRVT14_MUXI2_U_0P5 lib_cell 1097      0.67      0.60       0.400    15.015 unit           9
+SAEDRVT14_AO21_U_0P5 lib_cell 1065      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_ADDF_V1_0P5 lib_cell 1036      1.70      0.60       1.021     6.855 unit          23
+SAEDRVT14_INV_S_0P5 lib_cell   609      0.30      0.60       0.178    22.523 unit            4
+SAEDRVT14_TIE0_PV1ECO_1 lib_cell 591      0.37      0.60       0.222    18.018 unit          5
+SAEDRVT14_OAI22_0P5 lib_cell   552      0.52      0.60       0.311    22.523 unit            7
+SAEDRVT14_ND2_CDC_1 lib_cell   450      0.37      0.60       0.222    22.523 unit            5
+SAEDRVT14_NR2_MM_0P5 lib_cell  391      0.37      0.60       0.222    22.523 unit            5
+SAEDLVT14_CAPT2 end_cap        388      0.30      0.60       0.178    11.261 unit            4
+SAEDLVT14_CAPB2 end_cap        386      0.30      0.60       0.178    11.261 unit            4
+SAEDRVT14_OA21B_1 lib_cell     337      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_AOI21_0P75 lib_cell  272      0.44      0.60       0.266    22.523 unit            6
+SAEDRVT14_AN4_0P5 lib_cell     177      0.67      0.60       0.400    17.518 unit            9
+SAEDRVT14_BUF_U_0P5 lib_cell   173      0.44      0.60       0.266    15.015 unit            6
+SAEDRVT14_LVLUBUF_IY2V1_1 lib_cell 162      3.11      1.20       3.730     1.341 unit       84
+SAEDRVT14_MUX2_U_0P5 lib_cell  103      0.74      0.60       0.444    13.514 unit           10
+SAEDRVT14_CAPBTAP6 well_tap     95      0.59      0.60       0.355     5.631 unit            8
+SAEDLVT14_CAPBTAP6 well_tap     95      0.59      0.60       0.355     5.631 unit            8
+SAEDLVT14_CAPBIN13 end_cap      95      1.11      0.60       0.666     3.003 unit           15
+SAEDRVT14_CAPBIN13 end_cap      94      1.11      0.60       0.666     3.003 unit           15
+SAEDRVT14_ADDF_V1_1 lib_cell    92      1.70      0.60       1.021     6.855 unit           23
+SAEDRVT14_ADDH_0P5 lib_cell     73      1.11      0.60       0.666     9.009 unit           15
+SAEDRVT14_OA22_U_0P5 lib_cell   73      0.67      0.60       0.400    17.518 unit            9
+SAEDRVT14_OR4_1 lib_cell        70      0.67      0.60       0.400    17.518 unit            9
+SAEDRVT14_ND2B_U_0P5 lib_cell   65      0.52      0.60       0.311    16.088 unit            7
+SAEDRVT14_BUF_ECO_1 lib_cell    58      0.44      0.60       0.266    15.015 unit            6
+SAEDRVT14_OR2_0P5 lib_cell      46      0.52      0.60       0.311    16.088 unit            7
+SAEDRVT14_CKGTPLT_V5_1 lib_cell 32      1.33      0.60       0.799     8.759 unit           18
+SAEDRVT14_AOI22_0P5 lib_cell    31      0.81      0.60       0.488    14.333 unit           11
+SAEDRVT14_NR4_0P75 lib_cell     30      0.81      0.60       0.488    14.333 unit           11
+SAEDRVT14_AN2B_MM_1 lib_cell    30      0.67      0.60       0.400    12.513 unit            9
+SAEDRVT14_TIE1_V1_2 lib_cell    29      0.37      0.60       0.222    13.514 unit            5
+SAEDRVT14_AO33_1 lib_cell       24      0.89      0.60       0.533    16.892 unit           12
+SAEDRVT14_OA33_U_0P5 lib_cell   24      0.89      0.60       0.533    16.892 unit           12
+SAEDRVT14_AO21B_0P5 lib_cell    18      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_AO221_0P5 lib_cell    16      0.81      0.60       0.488    16.380 unit           11
+SAEDRVT14_OR3_0P5 lib_cell      15      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_EO2_V1_0P75 lib_cell  14      0.74      0.60       0.444    11.261 unit           10
+SAEDRVT14_AO32_U_0P5 lib_cell   11      0.74      0.60       0.444    18.018 unit           10
+SAEDRVT14_BUF_PS_0P75 lib_cell   8      0.52      0.60       0.311    16.088 unit            7
+SAEDRVT14_OA31_1 lib_cell        8      0.67      0.60       0.400    17.518 unit            9
+SAEDRVT14_EN2_1 lib_cell         8      0.89      0.60       0.533     9.384 unit           12
+SAEDRVT14_AN3_0P5 lib_cell       7      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_LDNQ_U_0P5 lib_cell    6      1.04      0.60       0.622     8.044 unit           14
+SAEDRVT14_MUXI4_U_0P5 lib_cell   6      1.63      0.60       0.977     9.214 unit           22
+SAEDRVT14_AO22_0P5 lib_cell      4      0.89      0.60       0.533    13.138 unit           12
+SAEDRVT14_INV_0P75 lib_cell      3      0.30      0.60       0.178    22.523 unit            4
+SAEDRVT14_NR3_0P5 lib_cell       3      0.74      0.60       0.444    13.514 unit           10
+SAEDRVT14_OA21_1 lib_cell        3      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_OA2BB2_V1_0P5 lib_cell 3      0.81      0.60       0.488    14.333 unit           11
+SAEDRVT14_OA221_U_0P5 lib_cell   2      0.81      0.60       0.488    16.380 unit           11
+SAEDRVT14_NR2_MM_1 lib_cell      2      0.37      0.60       0.222    22.523 unit            5
+SAEDRVT14_LVLUBUF_IY2_1 lib_cell 1      3.40      1.20       4.085     1.224 unit           92
+SAEDRVT14_AO2BB2_V1_1 lib_cell   1      1.04      0.60       0.622    11.261 unit           14
+SAEDRVT14_AO21_1 lib_cell        1      0.59      0.60       0.355    16.892 unit            8
+SAEDRVT14_ND3_0P5 lib_cell       1      0.74      0.60       0.444    13.514 unit           10
+SAEDRVT14_FSDPRBQ_V2LP_1 lib_cell 1      2.15      0.60       1.288     6.213 unit          29
+SAEDRVT14_FSDPQ_V2_0P5 lib_cell  1      1.85      0.60       1.110     6.306 unit           25
+SAEDRVT14_AOI21_0P5 lib_cell     1      0.44      0.60       0.266    22.523 unit            6
+SAEDRVT14_AOI31_0P5 lib_cell     1      0.81      0.60       0.488    14.333 unit           11
+
+NET INFORMATION
+------------------------------------------------------------------
+NetType                 Count FloatingNets         Vias Nets/Cells
+------------------------------------------------------------------
+Total                   16417         2728        17763      1.176
+Signal                  16414         2728            0      1.175
+Power                       2            0         9315      0.000
+Ground                      1            0         8448      0.000
+Analog Signal               0            0            0      0.000
+Analog Ground               0            0            0      0.000
+Analog Power                0            0            0      0.000
+Clock                       0            0            0      0.000
+Tie Low                     0            0            0      0.000
+Tie High                    0            0            0      0.000
+Others                      0            0            0      0.000
+
+NET FANOUT AND PIN COUNT INFORMATION
+---------------------------------------------------
+Fanout        Netcount     netPinCount     NetCount
+---------------------------------------------------
+<2               12072     <2                  2728
+2                 2762     2                   9344
+3                  550     3                   2762
+4                  314     4                    550
+5                   94     5                    314
+6-10               166     6-10                 240
+11-20              115     11-20                123
+21-30              154     21-30                148
+31-50              161     31-50                179
+51-100               6     51-100                 6
+101-500             20     101-500               20
+501-1000             1     501-1000               1
+>1000                2     >1000                  2
+
+PORT AND PIN INFORMATION
+------------------------------------------------------------------------------
+Type         Total     Input    Output     Inout      3-st     Power    Ground
+------------------------------------------------------------------------------
+Total        76875     62830     14013         0         0     14727     13965
+Macro            0         0         0         0         0         0         0
+Ports          252       167        85         0         0         2         1
+------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                              FLOORPLAN INFORMATION
+--------------------------------------------------------------------------------
+
+CORE AND CHIP AREA INFORMATION
+---------------------------
+Core Area is :    13187.022
+Chip Area is :    13650.362
+---------------------------
+
+SITE ROW INFORMATION
+-----------------------------------------------------------------------
+Site Name    Width    Height   Total Rows     Total Tiles          Area
+-----------------------------------------------------------------------
+unit          0.07      0.60          191          297005     13187.022
+-----------------------------------------------------------------------
+
+BLOCKAGE INFORMATION
+------------------------------------------------
+Blockage Type                Count          Area
+------------------------------------------------
+Hard placement                   0         0.000
+Soft placement                   0         0.000
+Hard macro                       0         0.000
+Partial placement                0         0.000
+Register                         0         0.000
+Placement allow Buffer Only      0         0.000
+Placement allow RP Group Only    0         0.000
+RP Group                         0         0.000
+Category                         0         0.000
+Routing                          0         0.000
+Routing for Top                  0         0.000
+Routing For Design Rule          0         0.000
+Shaping                          0         0.000
+------------------------------------------------
+
+POWER DOMAIN INFORMATION
+--------------------------------------------------------------------
+Power Domain Name    VA Name         Primary Power Net Primary Ground Net
+--------------------------------------------------------------------
+PDm                  DEFAULT_VA      VDD               VSS
+--------------------------------------------------------------------
+
+VOLTAGE AREA INFORMATION
+-------------------------------------------------------------------------------------
+VA Name          Number             Area       Target    bbox    bbox    bbox    bbox
+              of shapes                   Utilization     llx     lly     urx     ury
+-------------------------------------------------------------------------------------
+DEFAULT_VA            1        13187.022         1.00    1.00    1.00  116.07  115.60
+-------------------------------------------------------------------------------------
+
+GROUP BOUND INFORMATION
+----------------------------------------
+No Group Bound exists
+
+EXCLUSIVE MOVEBOUND INFORMATION
+----------------------------------------
+No Exclusive MoveBound exists.
+
+HARD AND SOFT MOVEBOUND INFORMATION
+----------------------------------------
+No Hard Or Soft MoveBound exists.
+
+ROUTE GUIDE INFORMATION
+------------------------------------------------
+Route Guide Type             Count          Area
+------------------------------------------------
+Extra Detour Region              0         0.000
+Over icovl CellLayers            0         0.000
+River Routing                    0         0.000
+Area Double Via                  0         0.000
+Access Preference                0         0.000
+Default                          0         0.000
+Switched Direction Only          0         0.000
+Max Patterns                     0         0.000
+Others                           0         0.000
+------------------------------------------------
+
+MULTIBIT REGISTER INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+MULTIBIT LS/ISO CELLS INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+RP GROUP INFORMATION
+----------------------------------------
+No RP Group exists
+
+LAYER INFORMATION
+--------------------------------------------------------------------------
+Layer Name Direction Ignored Pitch  default minWidth minSpacing    sameNet
+                                      Width                     MinSpacing
+--------------------------------------------------------------------------
+M1         Ver       NO       0.07     0.03     0.03       0.03       0.00
+M2         Hor       NO       0.06     0.03     0.03       0.03       0.03
+M3         Ver       NO       0.07     0.03     0.03       0.03       0.03
+M4         Hor       NO       0.07     0.06     0.06       0.04       0.03
+M5         Ver       NO       0.12     0.06     0.06       0.04       0.03
+M6         Hor       NO       0.12     0.06     0.06       0.04       0.03
+M7         Ver       NO       0.12     0.06     0.06       0.04       0.03
+M8         Hor       NO       0.12     0.06     0.06       0.04       0.03
+M9         Ver       NO       0.12     0.06     0.06       0.04       0.00
+MRDL       Hor       NO       0.60     2.00     2.00       2.00       0.00
+--------------------------------------------------------------------------
+1

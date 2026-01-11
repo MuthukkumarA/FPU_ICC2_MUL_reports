@@ -1,0 +1,105 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type local_skew
+        -nosplit
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:24:49 2025
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=====================================================
+==== Local Skew Reporting for Corner ss0p72v125c ====
+=====================================================
+
+====================================== Summary Table for Corner ss0p72v125c ======================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_mode::ss0p72v125c
+rclk                                    M,D      1613      0.18      0.25         56086        0.17          --
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1613      0.18      0.25                      0.17          --
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================================= Details Table for Corner ss0p72v125c =============================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_mode::ss0p72v125c
+rclk
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK      0.25 r      0.07 r        --        --      0.17
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre2/q_reg_49_/CK      0.25 r      0.07 r        --        --      0.17
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_50_/CK      0.25 r      0.07 r        --        --      0.17
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_45_/CK      0.25 r      0.07 r        --        --      0.17
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_48_/CK      0.25 r      0.07 r        --        --      0.17
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_41_/CK      0.10 r      0.25 r        --        --     -0.14
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_46_/CK      0.10 r      0.25 r        --        --     -0.14
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_42_/CK      0.10 r      0.25 r        --        --     -0.14
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_43_/CK      0.10 r      0.25 r        --        --     -0.14
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_44_/CK      0.10 r      0.25 r        --        --     -0.14
+
+
+=====================================================
+==== Local Skew Reporting for Corner ss0p72vm40c ====
+=====================================================
+
+====================================== Summary Table for Corner ss0p72vm40c ======================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode, Scenario: turbo_mode::ss0p72vm40c
+rclk                                    M,D      1613      0.17      0.23         56086        0.16        0.13
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1613      0.17      0.23                      0.16        0.13
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+============================================= Details Table for Corner ss0p72vm40c =============================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode, Scenario: turbo_mode::ss0p72vm40c
+rclk
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK      0.23 r      0.07 r        --        --      0.16
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_40_/CK      0.23 r      0.07 r        --        --      0.16
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_39_/CK      0.23 r      0.07 r        --        --      0.16
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre2/q_reg_50_/CK      0.23 r      0.07 r        --        --      0.16
+                                   L   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre2/q_reg_49_/CK      0.23 r      0.07 r        --        --      0.16
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_41_/CK      0.10 r      0.23 r        --        --     -0.13
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_46_/CK      0.10 r      0.23 r        --        --     -0.13
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_45_/CK      0.10 r      0.23 r        --        --     -0.13
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_44_/CK      0.10 r      0.23 r        --        --     -0.13
+                                   S   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_43_/CK      0.10 r      0.23 r        --        --     -0.13
+                               (H) L   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_41_/CK      0.10 r      0.23 r        --        --      0.13
+                               (H) L   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_47_/CK      0.10 r      0.23 r        --        --      0.13
+                               (H) L   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_46_/CK      0.10 r      0.23 r        --        --      0.13
+                               (H) L   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_45_/CK      0.10 r      0.23 r        --        --      0.13
+                               (H) L   i_m4stg_frac/co31_dff/q_reg_0_/CK i_m4stg_frac/out_dff/q_reg_44_/CK      0.10 r      0.23 r        --        --      0.13
+                               (H) S   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK      0.23 r      0.07 r        --        --     -0.16
+                               (H) S   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_40_/CK      0.23 r      0.07 r        --        --     -0.16
+                               (H) S   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_50_/CK      0.23 r      0.07 r        --        --     -0.16
+                               (H) S   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_45_/CK      0.23 r      0.07 r        --        --     -0.16
+                               (H) S   i_m4stg_frac/out_dff/q_reg_41_/CK fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_49_/CK      0.23 r      0.07 r        --        --     -0.16
+
+
+1

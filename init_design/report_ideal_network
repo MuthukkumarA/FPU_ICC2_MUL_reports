@@ -1,0 +1,15 @@
+****************************************
+Report : ideal_network
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Sun Aug 10 22:39:35 2025
+****************************************
+
+Ideal network data for scenario 'func_mode::ss0p72v125c':
+No ideal source pins or ports.
+
+
+Ideal network data for scenario 'turbo_mode::ss0p72vm40c':
+No ideal source pins or ports.
+
+1

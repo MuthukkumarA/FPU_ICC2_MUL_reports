@@ -1,0 +1,599 @@
+****************************************
+Report : report_dont_touch
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 17:02:58 2025
+****************************************
+
+Report : dont_touch
+
+Descriptions of dont_touch reasons:
+              upf_ls : Level-shifter cell
+
+Instance fpu_mul_ctl/i_m1stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m4stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m4stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m5stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m5stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m6stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m6stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_ld0_1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_ld0_2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_ld0_inv/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_ld0_inv/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m1stg_exp_in1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m1stg_exp_in2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m2stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3astg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3bstg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3stg_expa/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m4stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_mul_exp_out/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_in1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_in2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mstg_xtra_regs/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_out/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Net inq_op[7]
+ upf_ls
+
+Net inq_op[6]
+ upf_ls
+
+Net inq_op[5]
+ upf_ls
+
+Net inq_op[4]
+ upf_ls
+
+Net inq_op[3]
+ upf_ls
+
+Net inq_op[2]
+ upf_ls
+
+Net inq_op[1]
+ upf_ls
+
+Net inq_op[0]
+ upf_ls
+
+Net inq_rnd_mode[1]
+ upf_ls
+
+Net inq_rnd_mode[0]
+ upf_ls
+
+Net inq_id[4]
+ upf_ls
+
+Net inq_id[3]
+ upf_ls
+
+Net inq_id[2]
+ upf_ls
+
+Net inq_id[1]
+ upf_ls
+
+Net inq_id[0]
+ upf_ls
+
+Net inq_in1[63]
+ upf_ls
+
+Net inq_in1[62]
+ upf_ls
+
+Net inq_in1[61]
+ upf_ls
+
+Net inq_in1[60]
+ upf_ls
+
+Net inq_in1[59]
+ upf_ls
+
+Net inq_in1[58]
+ upf_ls
+
+Net inq_in1[57]
+ upf_ls
+
+Net inq_in1[56]
+ upf_ls
+
+Net inq_in1[55]
+ upf_ls
+
+Net inq_in1[54]
+ upf_ls
+
+Net inq_in1[53]
+ upf_ls
+
+Net inq_in1[52]
+ upf_ls
+
+Net inq_in1[51]
+ upf_ls
+
+Net inq_in1[50]
+ upf_ls
+
+Net inq_in1[49]
+ upf_ls
+
+Net inq_in1[48]
+ upf_ls
+
+Net inq_in1[47]
+ upf_ls
+
+Net inq_in1[46]
+ upf_ls
+
+Net inq_in1[45]
+ upf_ls
+
+Net inq_in1[44]
+ upf_ls
+
+Net inq_in1[43]
+ upf_ls
+
+Net inq_in1[42]
+ upf_ls
+
+Net inq_in1[41]
+ upf_ls
+
+Net inq_in1[40]
+ upf_ls
+
+Net inq_in1[39]
+ upf_ls
+
+Net inq_in1[38]
+ upf_ls
+
+Net inq_in1[37]
+ upf_ls
+
+Net inq_in1[36]
+ upf_ls
+
+Net inq_in1[35]
+ upf_ls
+
+Net inq_in1[34]
+ upf_ls
+
+Net inq_in1[33]
+ upf_ls
+
+Net inq_in1[32]
+ upf_ls
+
+Net inq_in1[31]
+ upf_ls
+
+Net inq_in1[30]
+ upf_ls
+
+Net inq_in1[29]
+ upf_ls
+
+Net inq_in1[28]
+ upf_ls
+
+Net inq_in1[27]
+ upf_ls
+
+Net inq_in1[26]
+ upf_ls
+
+Net inq_in1[25]
+ upf_ls
+
+Net inq_in1[24]
+ upf_ls
+
+Net inq_in1[23]
+ upf_ls
+
+Net inq_in1[22]
+ upf_ls
+
+Net inq_in1[21]
+ upf_ls
+
+Net inq_in1[20]
+ upf_ls
+
+Net inq_in1[19]
+ upf_ls
+
+Net inq_in1[18]
+ upf_ls
+
+Net inq_in1[17]
+ upf_ls
+
+Net inq_in1[16]
+ upf_ls
+
+Net inq_in1[15]
+ upf_ls
+
+Net inq_in1[14]
+ upf_ls
+
+Net inq_in1[13]
+ upf_ls
+
+Net inq_in1[12]
+ upf_ls
+
+Net inq_in1[11]
+ upf_ls
+
+Net inq_in1[10]
+ upf_ls
+
+Net inq_in1[9]
+ upf_ls
+
+Net inq_in1[8]
+ upf_ls
+
+Net inq_in1[7]
+ upf_ls
+
+Net inq_in1[6]
+ upf_ls
+
+Net inq_in1[5]
+ upf_ls
+
+Net inq_in1[4]
+ upf_ls
+
+Net inq_in1[3]
+ upf_ls
+
+Net inq_in1[2]
+ upf_ls
+
+Net inq_in1[1]
+ upf_ls
+
+Net inq_in1[0]
+ upf_ls
+
+Net inq_in1_53_0_neq_0
+ upf_ls
+
+Net inq_in1_50_0_neq_0
+ upf_ls
+
+Net inq_in1_53_32_neq_0
+ upf_ls
+
+Net inq_in1_exp_eq_0
+ upf_ls
+
+Net inq_in1_exp_neq_ffs
+ upf_ls
+
+Net inq_in2[63]
+ upf_ls
+
+Net inq_in2[62]
+ upf_ls
+
+Net inq_in2[61]
+ upf_ls
+
+Net inq_in2[60]
+ upf_ls
+
+Net inq_in2[59]
+ upf_ls
+
+Net inq_in2[58]
+ upf_ls
+
+Net inq_in2[57]
+ upf_ls
+
+Net inq_in2[56]
+ upf_ls
+
+Net inq_in2[55]
+ upf_ls
+
+Net inq_in2[54]
+ upf_ls
+
+Net inq_in2[53]
+ upf_ls
+
+Net inq_in2[52]
+ upf_ls
+
+Net inq_in2[51]
+ upf_ls
+
+Net inq_in2[50]
+ upf_ls
+
+Net inq_in2[49]
+ upf_ls
+
+Net inq_in2[48]
+ upf_ls
+
+Net inq_in2[47]
+ upf_ls
+
+Net inq_in2[46]
+ upf_ls
+
+Net inq_in2[45]
+ upf_ls
+
+Net inq_in2[44]
+ upf_ls
+
+Net inq_in2[43]
+ upf_ls
+
+Net inq_in2[42]
+ upf_ls
+
+Net inq_in2[41]
+ upf_ls
+
+Net inq_in2[40]
+ upf_ls
+
+Net inq_in2[39]
+ upf_ls
+
+Net inq_in2[38]
+ upf_ls
+
+Net inq_in2[37]
+ upf_ls
+
+Net inq_in2[36]
+ upf_ls
+
+Net inq_in2[35]
+ upf_ls
+
+Net inq_in2[34]
+ upf_ls
+
+Net inq_in2[33]
+ upf_ls
+
+Net inq_in2[32]
+ upf_ls
+
+Net inq_in2[31]
+ upf_ls
+
+Net inq_in2[30]
+ upf_ls
+
+Net inq_in2[29]
+ upf_ls
+
+Net inq_in2[28]
+ upf_ls
+
+Net inq_in2[27]
+ upf_ls
+
+Net inq_in2[26]
+ upf_ls
+
+Net inq_in2[25]
+ upf_ls
+
+Net inq_in2[24]
+ upf_ls
+
+Net inq_in2[23]
+ upf_ls
+
+Net inq_in2[22]
+ upf_ls
+
+Net inq_in2[21]
+ upf_ls
+
+Net inq_in2[20]
+ upf_ls
+
+Net inq_in2[19]
+ upf_ls
+
+Net inq_in2[18]
+ upf_ls
+
+Net inq_in2[17]
+ upf_ls
+
+Net inq_in2[16]
+ upf_ls
+
+Net inq_in2[15]
+ upf_ls
+
+Net inq_in2[14]
+ upf_ls
+
+Net inq_in2[13]
+ upf_ls
+
+Net inq_in2[12]
+ upf_ls
+
+Net inq_in2[11]
+ upf_ls
+
+Net inq_in2[10]
+ upf_ls
+
+Net inq_in2[9]
+ upf_ls
+
+Net inq_in2[8]
+ upf_ls
+
+Net inq_in2[7]
+ upf_ls
+
+Net inq_in2[6]
+ upf_ls
+
+Net inq_in2[5]
+ upf_ls
+
+Net inq_in2[4]
+ upf_ls
+
+Net inq_in2[3]
+ upf_ls
+
+Net inq_in2[2]
+ upf_ls
+
+Net inq_in2[1]
+ upf_ls
+
+Net inq_in2[0]
+ upf_ls
+
+Net inq_in2_53_0_neq_0
+ upf_ls
+
+Net inq_in2_50_0_neq_0
+ upf_ls
+
+Net inq_in2_53_32_neq_0
+ upf_ls
+
+Net inq_in2_exp_eq_0
+ upf_ls
+
+Net inq_in2_exp_neq_ffs
+ upf_ls
+
+Net inq_mul
+ upf_ls
+
+Net mul_dest_rdy
+ upf_ls
+
+Net mul_dest_rdya
+ upf_ls
+
+Net fmul_clken_l
+ upf_ls
+
+Net fmul_clken_l_buf1
+ upf_ls
+
+Net arst_l
+ upf_ls
+
+Net grst_l
+ upf_ls
+
+Net rclk
+ upf_ls
+
+Net se_mul
+ upf_ls
+
+Net se_mul64
+ upf_ls
+32 of 16455 instances are dont_touch
+163 of 49681 nets are dont_touch
+1

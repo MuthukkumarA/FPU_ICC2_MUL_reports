@@ -1,0 +1,45 @@
+****************************************
+ Report : check_design 
+ Options: { pre_placement_stage }
+ Design : fpu_mul
+ Version: T-2022.03-SP4
+ Date   : Sun Aug 10 22:39:34 2025
+****************************************
+
+Running mega-check 'pre_placement_stage': 
+    Running atomic-check 'design_mismatch'
+    Running atomic-check 'scan_chain'
+    Running atomic-check 'mv_design'
+    Running atomic-check 'rp_constraints'
+    Running atomic-check 'timing'
+    Running atomic-check 'hier_pre_placement'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  MV-012       Warn   83         %drvType '%driver' (supply net '%drvSupplyNet' [%drvVoltage]) ca...
+  MV-013       Warn   85         %drvType '%driver' [supply net '%drvSupplyNet', power state '%dr...
+  MV-045       Error  163        The input supply net '%inSupplyNet' of the level shifter '%cell'...
+  MV-046       Error  163        Level shifter '%cell'%dataPinName of level shifter type '%lsType...
+  MV-072       Info   163        The level shifter '%cell' is not associated with any level shift...
+  MV-099       Warn   3          Supply state(s) has not been defined on the %type '%supply'.
+  TCK-001      Warn   6496       The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  ----------------------------------------------------------------------------------------------------
+  Total 7157 EMS messages : 326 errors, 6667 warnings, 164 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DMM-117      Warn   1          Reporting design mismatch(es) or creating or setting design mism...
+  NDMUI-173    Info   1          There are no relative placement groups in the design.
+  ----------------------------------------------------------------------------------------------------
+  Total 2 non-EMS messages : 0 errors, 1 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+Information: EMS database is saved to file 'check_design.pre_placement_stage.ems'.
+Information: Non-EMS messages are saved into file 'check_design2025Aug10223934.log'.
+1
