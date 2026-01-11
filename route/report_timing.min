@@ -1,0 +1,241 @@
+Warning: Scenario func_mode::ss0p72v125c is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -crosstalk_delta
+        -derate
+        -attributes
+        -physical
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:09:46 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Startpoint: inq_in2[49] (input port clocked by rclk)
+  Endpoint: fpu_mul_frac_dp/i_mul_frac_in2/q_reg_49_ (rising edge-triggered flip-flop clocked by rclk)
+  Mode: turbo_mode
+  Corner: ss0p72vm40c
+  Scenario: turbo_mode::ss0p72vm40c
+  Path Group: **in2reg_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock rclk (rise edge)                                                                                               0.00      0.00
+  clock network delay (propagated)                                                                                     0.12      0.12
+  input external delay                                                                                                 0.50      0.62 r
+  inq_in2[49] (in)                                                                         0.00      1.00              0.00      0.62 r    (0.13,46.29)
+  inq_in2[49] (net)                                                       1      1.57                                                                        d
+  eco_cell_98/A (SAEDRVT14_BUF_20)                                                         0.00      1.00      --      0.00      0.62 r    (2.36,46.24)
+  eco_cell_98/X (SAEDRVT14_BUF_20)                                                         0.00      1.00              0.01      0.63 r    (3.20,46.42)
+  eco_net_98 (net)                                                        1      0.95                                                                        d
+  inq_in2_49__UPF_LS/A (SAEDRVT14_LVLUBUF_IY2_1)                                           0.00      1.00     -0.00   -0.00      0.63 r    (10.23,46.91)     s
+  inq_in2_49__UPF_LS/X (SAEDRVT14_LVLUBUF_IY2_1)                                           0.00      1.00              0.04      0.67 r    (12.51,46.48)     s
+  n272 (net)                                                              1      0.46
+  fpu_mul_frac_dp/i_mul_frac_in2/U61/A1 (SAEDRVT14_AN2_MM_0P5)                             0.00      1.00     -0.00   -0.00      0.67 r    (14.73,45.10)
+  fpu_mul_frac_dp/i_mul_frac_in2/U61/X (SAEDRVT14_AN2_MM_0P5)                              0.00      1.00              0.01      0.68 r    (14.95,45.10)
+  fpu_mul_frac_dp/i_mul_frac_in2/N53 (net)                                1      0.28
+  fpu_mul_frac_dp/i_mul_frac_in2/q_reg_49_/D (SAEDRVT14_FSDPQ_V2LP_1)                      0.00      1.00      0.00    0.00      0.68 r    (15.91,45.11)     s, n
+  data arrival time                                                                                                              0.68
+
+  clock rclk (rise edge)                                                                                               0.00      0.00
+  clock network delay (propagated)                                                                                     0.12      0.12
+  fpu_mul_frac_dp/i_mul_frac_in2/q_reg_49_/CK (SAEDRVT14_FSDPQ_V2LP_1)                     0.02      1.00      0.00    0.00      0.12 r    (17.10,45.10)     s, n
+  library hold time                                                                                  1.00              0.00      0.12
+  data required time                                                                                                             0.12
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                             0.12
+  data arrival time                                                                                                             -0.68
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                    0.56
+
+
+
+  Startpoint: fpu_mul_frac_dp/i_mul_frac_out/q_reg_41_ (rising edge-triggered flip-flop clocked by rclk)
+  Endpoint: mul_frac_out[41] (output port clocked by rclk)
+  Mode: turbo_mode
+  Corner: ss0p72vm40c
+  Scenario: turbo_mode::ss0p72vm40c
+  Path Group: **reg2out_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                 Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock rclk (rise edge)                                                                                                0.00      0.00
+  clock network delay (propagated)                                                                                      0.11      0.11
+
+  fpu_mul_frac_dp/i_mul_frac_out/q_reg_41_/CK (SAEDRVT14_FSDPQ_V2LP_1)                      0.02      1.00              0.00      0.11 r    (62.97,3.70)      s, n
+  fpu_mul_frac_dp/i_mul_frac_out/q_reg_41_/Q (SAEDRVT14_FSDPQ_V2LP_1)                       0.01      1.00              0.04      0.15 f    (62.90,3.71)      s, n
+  fpu_mul_frac_dp/i_mul_frac_out/q[41] (net)                               1      2.30
+  eco_cell_203/A (SAEDRVT14_BUF_20)                                                         0.01      1.00     -0.00   -0.00      0.15 f    (60.38,1.84)
+  eco_cell_203/X (SAEDRVT14_BUF_20)                                                         0.00      1.00              0.01      0.16 f    (61.21,2.02)
+  mul_frac_out[41] (net)                                                   1      0.27
+  mul_frac_out[41] (out)                                                                    0.00      1.00      0.00    0.00      0.16 f    (59.92,0.13)
+  data arrival time                                                                                                               0.16
+
+  clock rclk (rise edge)                                                                                                0.00      0.00
+  clock network delay (propagated)                                                                                      0.12      0.12
+  output external delay                                                                                                -0.50     -0.38
+  data required time                                                                                                             -0.38
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                             -0.38
+  data arrival time                                                                                                              -0.16
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                     0.54
+
+
+
+  Startpoint: mul_dest_rdya (input port clocked by rclk)
+  Endpoint: m1stg_step (output port clocked by rclk)
+  Mode: turbo_mode
+  Corner: ss0p72vm40c
+  Scenario: turbo_mode::ss0p72vm40c
+  Path Group: **in2out_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                 Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock rclk (rise edge)                                                                                                0.00      0.00
+  clock network delay (propagated)                                                                                      0.12      0.12
+  input external delay                                                                                                  0.50      0.62 r
+  mul_dest_rdya (in)                                                                        0.00      1.00              0.00      0.62 r    (0.13,6.03)
+  mul_dest_rdya (net)                                                      1      1.67                                                                        d
+  eco_cell_155/A (SAEDRVT14_BUF_20)                                                         0.00      1.00      --      0.00      0.62 r    (2.07,6.16)
+  eco_cell_155/X (SAEDRVT14_BUF_20)                                                         0.00      1.00              0.01      0.63 r    (2.90,5.98)
+  eco_net_155 (net)                                                        1      1.60                                                                        d
+  mul_dest_rdya_UPF_LS/A (SAEDRVT14_LVLUBUF_IY2_1)                                          0.00      1.00     -0.00   -0.00      0.63 r    (18.67,7.31)      s
+  mul_dest_rdya_UPF_LS/X (SAEDRVT14_LVLUBUF_IY2_1)                                          0.00      1.00              0.05      0.68 r    (20.95,6.88)      s
+  n329 (net)                                                               1      1.92
+  fpu_mul_ctl/U50/A1 (SAEDRVT14_NR2_MM_1)                                                   0.00      1.00      0.00    0.00      0.68 r    (32.19,10.96)
+  fpu_mul_ctl/U50/X (SAEDRVT14_NR2_MM_1)                                                    0.04      1.00              0.03      0.71 f    (32.23,10.90)
+  fpu_mul_ctl/n45 (net)                                                   11      8.26
+  fpu_mul_ctl/U51/A2 (SAEDRVT14_NR2_1P5)                                                    0.04      1.00     -0.00   -0.00      0.71 f    (36.48,14.45)
+  fpu_mul_ctl/U51/X (SAEDRVT14_NR2_1P5)                                                     0.05      1.00              0.06      0.76 r    (36.49,14.54)
+  fpu_mul_ctl/m1stg_step (net)                                             2      9.28
+  eco_cell_162/A (SAEDRVT14_BUF_20)                                                         0.05      1.00     -0.01   -0.01      0.75 r    (113.29,2.56)
+  eco_cell_162/X (SAEDRVT14_BUF_20)                                                         0.00      1.00              0.03      0.78 r    (114.12,2.38)
+  m1stg_step (net)                                                         1      0.32
+  m1stg_step (out)                                                                          0.00      1.00      --     -0.00      0.78 r    (114.40,0.13)
+  data arrival time                                                                                                               0.78
+
+  clock rclk (rise edge)                                                                                                0.00      0.00
+  clock network delay (propagated)                                                                                      0.12      0.12
+  output external delay                                                                                                -0.50     -0.38
+  data required time                                                                                                             -0.38
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                             -0.38
+  data arrival time                                                                                                              -0.78
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                     1.16
+
+
+
+  Startpoint: i_m4stg_frac/a2sum_dff/q_reg_65_ (rising edge-triggered flip-flop clocked by rclk)
+  Endpoint: i_m4stg_frac/out_dff/q_reg_65_ (rising edge-triggered flip-flop clocked by rclk)
+  Mode: turbo_mode
+  Corner: ss0p72vm40c
+  Scenario: turbo_mode::ss0p72vm40c
+  Path Group: rclk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                          Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock rclk (rise edge)                                                                                                                         0.00      0.00
+  clock network delay (propagated)                                                                                                               0.11      0.11
+
+  i_m4stg_frac/a2sum_dff/q_reg_65_/CK (SAEDRVT14_FSDPQ_V2LP_1)                                                       0.02      1.00              0.00      0.11 r    (78.82,44.50)     s, n
+  i_m4stg_frac/a2sum_dff/q_reg_65_/Q (SAEDRVT14_FSDPQ_V2LP_1)                                                        0.01      1.00              0.04      0.14 r    (78.89,44.51)     s, n
+  i_m4stg_frac/a2sum_dff/q[65] (net)                                                                1      0.59
+  i_m4stg_frac/DP_OP_14J2_122_7514/clock_opt_cts_opt_gre_h_inst_4733/A (SAEDRVT14_BUF_UCDC_0P5)                      0.01      1.00     -0.00   -0.00      0.14 r    (78.37,43.31)
+  i_m4stg_frac/DP_OP_14J2_122_7514/clock_opt_cts_opt_gre_h_inst_4733/X (SAEDRVT14_BUF_UCDC_0P5)                      0.01      1.00              0.01      0.16 r    (78.52,43.31)
+  i_m4stg_frac/DP_OP_14J2_122_7514/gre_net_433 (net)                                                1      0.83
+  i_m4stg_frac/DP_OP_14J2_122_7514/U103/CI (SAEDLVT14_ADDF_V1_2)                                                     0.01      1.00      0.00    0.00      0.16 r    (77.79,42.76)
+  i_m4stg_frac/DP_OP_14J2_122_7514/U103/S (SAEDLVT14_ADDF_V1_2)                                                      0.00      1.00              0.01      0.17 r    (78.44,42.70)
+  i_m4stg_frac/DP_OP_14J2_122_7514/O1[33] (net)                                                     1      1.26
+  i_m4stg_frac/out_dff/U78/A1 (SAEDRVT14_AN2_MM_0P5)                                                                 0.00      1.00     -0.00   -0.00      0.17 r    (81.62,37.30)
+  i_m4stg_frac/out_dff/U78/X (SAEDRVT14_AN2_MM_0P5)                                                                  0.01      1.00              0.01      0.18 r    (81.84,37.30)
+  i_m4stg_frac/out_dff/N68 (net)                                                                    1      0.52
+  i_m4stg_frac/out_dff/clock_opt_cts_opt_ropt_h_inst_4782/A (SAEDRVT14_DEL_R2V1_1)                                   0.01      1.00      0.00    0.00      0.18 r    (82.66,37.30)
+  i_m4stg_frac/out_dff/clock_opt_cts_opt_ropt_h_inst_4782/X (SAEDRVT14_DEL_R2V1_1)                                   0.00      1.00              0.02      0.20 r    (82.88,37.30)
+  i_m4stg_frac/out_dff/ropt_net_477 (net)                                                           1      0.57
+  i_m4stg_frac/out_dff/q_reg_65_/D (SAEDRVT14_FSDPQ_V2LP_1)                                                          0.00      1.00     -0.00   -0.00      0.20 r    (82.59,37.91)     s, n
+  data arrival time                                                                                                                                        0.20
+
+  clock rclk (rise edge)                                                                                                                         0.00      0.00
+  clock network delay (propagated)                                                                                                               0.18      0.18
+  i_m4stg_frac/out_dff/q_reg_65_/CK (SAEDRVT14_FSDPQ_V2LP_1)                                                         0.04      1.00      0.00    0.00      0.18 r    (83.78,37.90)     s, n
+  library hold time                                                                                                            1.00              0.01      0.20
+  data required time                                                                                                                                       0.20
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                       0.20
+  data arrival time                                                                                                                                       -0.20
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                                              0.00
+
+
+1

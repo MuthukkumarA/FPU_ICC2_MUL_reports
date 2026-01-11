@@ -1,0 +1,31 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:09:49 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Mode: func_mode
+  Clock: rclk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  i_m4stg_frac/out_dff/q_reg_41_/CK                     0.25              rp-+   ss0p72v125c
+  fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_50_/CK        0.07      0.18    rp-+   ss0p72v125c
+
+---------------------------------------------------------------------------------------------------
+
+  Mode: turbo_mode
+  Clock: rclk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  i_m4stg_frac/out_dff/q_reg_41_/CK                     0.24              rp-+   ss0p72vm40c
+  fpu_mul_frac_dp/i_m5stg_frac_pre1/q_reg_51_/CK        0.06      0.17    rp-+   ss0p72vm40c
+
+---------------------------------------------------------------------------------------------------
+1

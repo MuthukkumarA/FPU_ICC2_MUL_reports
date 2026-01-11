@@ -1,0 +1,35 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:09:46 2025
+****************************************
+
+
+
+   Mode: func_mode Corner: ss0p72v125c
+   Scenario: func_mode::ss0p72v125c
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: turbo_mode Corner: ss0p72vm40c
+   Scenario: turbo_mode::ss0p72vm40c
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func_mode Corner: ss0p72v125c
+   Scenario: func_mode::ss0p72v125c
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   fpu_mul_frac_dp/n1635        7.95           5.10           2.85  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 0
+1

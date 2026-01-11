@@ -1,0 +1,830 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Warning: time.si_enable_analysis is on, it could increase the runtime and memory usage. 
+****************************************
+Report : clock qor
+        -type latency
+        -show_paths
+        -nosplit
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:09:48 2025
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==================================================
+==== Latency Reporting for Corner ss0p72v125c ====
+==================================================
+
+================================================= Summary Table for Corner ss0p72v125c =================================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_mode::ss0p72v125c
+rclk                                    M,D      1613      0.25      0.18        --      0.25      0.06      0.11      0.03        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1613        --      0.18        --      0.25      0.06        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================== Details Table for Corner ss0p72v125c ========================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_mode::ss0p72v125c
+rclk
+                                   L   i_m4stg_frac/pcout_dff/q_reg_11_/CK      0.25 r      0.22 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_10_/CK      0.25 r      0.22 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_7_/CK      0.25 r      0.22 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_9_/CK      0.25 r      0.22 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_6_/CK      0.25 r      0.22 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+
+
+=============================================
+==== Path Reports for Corner ss0p72v125c ====
+=============================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_11_/CK
+Latency             : 0.25
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      6.08    0.00    0.02    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      6.08    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   8.15   0.01   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.46   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.62   0.03   0.04   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.15 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  18.02   0.05   0.05   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.05   0.00   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  14.63   0.03   0.05   0.25 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  14.63   0.03   0.00    0.25 r
+  i_m4stg_frac/pcout_dff/q_reg_11_/CK (SAEDRVT14_FSDPQ_V2LP_1)     0.03    0.00    0.25 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.25
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_10_/CK
+Latency             : 0.25
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      6.08    0.00    0.02    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      6.08    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   8.15   0.01   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.46   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.62   0.03   0.04   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.15 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  18.02   0.05   0.05   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.05   0.00   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  14.63   0.03   0.05   0.25 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  14.63   0.03   0.00    0.25 r
+  i_m4stg_frac/pcout_dff/q_reg_10_/CK (SAEDRVT14_FSDPQ_V2LP_1)     0.03    0.00    0.25 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.25
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_7_/CK
+Latency             : 0.25
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      6.08    0.00    0.02    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      6.08    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   8.15   0.01   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.46   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.62   0.03   0.04   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.15 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  18.02   0.05   0.05   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.05   0.00   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  14.63   0.03   0.05   0.25 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  14.63   0.03   0.00    0.25 r
+  i_m4stg_frac/pcout_dff/q_reg_7_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.25 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.25
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_9_/CK
+Latency             : 0.25
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      6.08    0.00    0.02    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      6.08    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   8.15   0.01   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.46   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.62   0.03   0.04   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.15 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  18.02   0.05   0.05   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.05   0.00   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  14.63   0.03   0.05   0.25 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  14.63   0.03   0.00    0.25 r
+  i_m4stg_frac/pcout_dff/q_reg_9_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.25 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.25
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_6_/CK
+Latency             : 0.25
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  33.92   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      6.08    0.00    0.02    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      6.08    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   8.15   0.01   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.46   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.62   0.03   0.04   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.15 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  18.02   0.05   0.05   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.05   0.00   0.20 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  14.63   0.03   0.05   0.25 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  14.63   0.03   0.00    0.25 r
+  i_m4stg_frac/pcout_dff/q_reg_6_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.25 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.25
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/clk (fpu_mul_dffe_s_SIZE1_48)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/clk (fpu_mul_dffe_s_SIZE1_26)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/clk (fpu_mul_dffe_s_SIZE1_34)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/clk (fpu_mul_dffe_s_SIZE1_19)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : func_mode
+Corner              : ss0p72v125c
+Scenario            : func_mode::ss0p72v125c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.08    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.11    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3     10.39    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  33.92   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/clk (fpu_mul_dffe_s_SIZE1_41)   32  33.92   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+==================================================
+==== Latency Reporting for Corner ss0p72vm40c ====
+==================================================
+
+================================================= Summary Table for Corner ss0p72vm40c =================================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode, Scenario: turbo_mode::ss0p72vm40c
+rclk                                    M,D      1613      0.20      0.17        --      0.24      0.06      0.11      0.03        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1613        --      0.17        --      0.24      0.06        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================== Details Table for Corner ss0p72vm40c ========================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode, Scenario: turbo_mode::ss0p72vm40c
+rclk
+                                   L   i_m4stg_frac/pcout_dff/q_reg_9_/CK      0.24 r      0.21 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_10_/CK      0.24 r      0.21 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_11_/CK      0.24 r      0.21 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_7_/CK      0.24 r      0.21 r        --        --
+                                   L   i_m4stg_frac/pcout_dff/q_reg_8_/CK      0.24 r      0.21 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK      0.07 r      0.06 r        --        --
+                                   S   fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK      0.07 r      0.06 r        --        --
+
+
+=============================================
+==== Path Reports for Corner ss0p72vm40c ====
+=============================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_9_/CK
+Latency             : 0.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      5.97    0.00    0.01    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      5.97    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   7.61   0.00   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.18   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.24   0.03   0.03   0.13 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  16.75   0.04   0.05   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.04   0.00   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  13.60   0.02   0.05   0.24 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  13.60   0.02   0.00    0.24 r
+  i_m4stg_frac/pcout_dff/q_reg_9_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.24
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_10_/CK
+Latency             : 0.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      5.97    0.00    0.01    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      5.97    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   7.61   0.00   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.18   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.24   0.03   0.03   0.13 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  16.75   0.04   0.05   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.04   0.00   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  13.60   0.02   0.05   0.24 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  13.60   0.02   0.00    0.24 r
+  i_m4stg_frac/pcout_dff/q_reg_10_/CK (SAEDRVT14_FSDPQ_V2LP_1)     0.03    0.00    0.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.24
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_11_/CK
+Latency             : 0.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      5.97    0.00    0.01    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      5.97    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   7.61   0.00   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.18   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.24   0.03   0.03   0.13 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  16.75   0.04   0.05   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.04   0.00   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  13.60   0.02   0.05   0.24 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  13.60   0.02   0.00    0.24 r
+  i_m4stg_frac/pcout_dff/q_reg_11_/CK (SAEDRVT14_FSDPQ_V2LP_1)     0.03    0.00    0.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.24
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_7_/CK
+Latency             : 0.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      5.97    0.00    0.01    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      5.97    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   7.61   0.00   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.18   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.24   0.03   0.03   0.13 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  16.75   0.04   0.05   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.04   0.00   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  13.60   0.02   0.05   0.24 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  13.60   0.02   0.00    0.24 r
+  i_m4stg_frac/pcout_dff/q_reg_7_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.24
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : i_m4stg_frac/pcout_dff/q_reg_8_/CK
+Latency             : 0.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00    0.00    0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00    0.00    0.01 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.07 r
+  i_m4stg_frac/clock_opt_cts_ZCTSNET_41 (fpu_mul_mul64_0)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0 (fpu_mul_clken_buf_4)   32  31.41   0.02   0.00   0.07 r
+  i_m4stg_frac/ckbuf_0/U3/A1 (SAEDLVT14_AN2_8)                     0.02    0.00    0.07 r
+  i_m4stg_frac/ckbuf_0/U3/X (SAEDLVT14_AN2_8)       4      5.97    0.00    0.01    0.08 r
+  i_m4stg_frac/ckbuf_0/clk (fpu_mul_clken_buf_4)    4      5.97    0.00    0.00    0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/A (SAEDLVT14_INV_S_6)   0.00   0.00   0.08 r
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_9603_2529/X (SAEDLVT14_INV_S_6)    7   7.61   0.00   0.01   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/A (SAEDLVT14_INV_S_1)   0.01   0.00   0.09 f
+  i_m4stg_frac/clock_opt_cts_ZCTSINV_3980_2522/X (SAEDLVT14_INV_S_1)    9   4.18   0.01   0.01   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/A (SAEDRVT14_BUF_S_0P5)   0.01   0.00   0.10 r
+  i_m4stg_frac/clock_opt_cts_ccd_setup_inst_4691/X (SAEDRVT14_BUF_S_0P5)    8   4.24   0.03   0.03   0.13 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/A (SAEDRVT14_BUF_1P5)   0.03   0.01   0.14 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_2960_2521/X (SAEDRVT14_BUF_1P5)   26  16.75   0.04   0.05   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/A (SAEDLVT14_DEL_R2V1_2)   0.04   0.00   0.19 r
+  i_m4stg_frac/clock_opt_cts_ZCTSBUF_1776_2519/X (SAEDLVT14_DEL_R2V1_2)   27  13.60   0.02   0.05   0.24 r
+  i_m4stg_frac/pcout_dff/clk (fpu_mul_dff_s_SIZE69_0)   27  13.60   0.02   0.00    0.24 r
+  i_m4stg_frac/pcout_dff/q_reg_8_/CK (SAEDRVT14_FSDPQ_V2LP_1)      0.03    0.00    0.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.24
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/clk (fpu_mul_dffe_s_SIZE1_48)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/clk (fpu_mul_dffe_s_SIZE1_34)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/clk (fpu_mul_dffe_s_SIZE1_26)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/clk (fpu_mul_dffe_s_SIZE1_19)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : turbo_mode
+Corner              : ss0p72vm40c
+Scenario            : turbo_mode::ss0p72vm40c
+Skew Group          : default_rclk
+Clock Fanout        : rclk
+Clock at Sink       : rclk
+Sink                : fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK
+Latency             : 0.06
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  rclk (in)                                         1      2.06    0.00    0.00    0.00 r
+  eco_cell_160/A (SAEDRVT14_BUF_20)                                0.00   -0.00   -0.00 r
+  eco_cell_160/X (SAEDRVT14_BUF_20)                 1      1.02    0.00    0.01    0.01 r
+  rclk_UPF_LS/A (SAEDLVT14_LVLUBUF_IY2_2)                          0.00   -0.00    0.00 r
+  rclk_UPF_LS/X (SAEDLVT14_LVLUBUF_IY2_2)           3      9.61    0.01    0.04    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/A (SAEDLVT14_BUF_S_6)            0.01    0.00    0.04 r
+  clock_opt_cts_ZCTSBUF_5872_2559/X (SAEDLVT14_BUF_S_6)   32  31.41   0.02   0.02   0.06 r
+  fpu_mul_ctl/clock_opt_cts_ZCTSNET_2 (fpu_mul_fpu_mul_ctl_0)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/clk (fpu_mul_dffe_s_SIZE1_41)   32  31.41   0.02   0.00   0.06 r
+  fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/q_reg_0_/CK (SAEDRVT14_FSDPQ_V2LP_1)   0.02   0.00   0.06 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                              0.06
+
+
+1

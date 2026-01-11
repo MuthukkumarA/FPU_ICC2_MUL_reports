@@ -1,0 +1,2624 @@
+****************************************
+Report : report_dont_touch
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:10:14 2025
+****************************************
+
+Report : dont_touch
+
+Descriptions of dont_touch reasons:
+              upf_ls : Level-shifter cell
+
+Instance fpu_mul_ctl/i_m1stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m4stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m4stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m5stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m5stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m6stg_opdec/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m6stg_id/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_ld0_1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m2stg_ld0_2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3astg_ld0_inv/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_ctl/i_m3bstg_ld0_inv/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m1stg_exp_in1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m1stg_exp_in2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m2stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3astg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3bstg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m3stg_expa/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_m4stg_exp/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_exp_dp/i_mul_exp_out/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_in1/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_in2/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mstg_xtra_regs/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Instance fpu_mul_frac_dp/i_mul_frac_out/clk_gate_q_reg/latch (SAEDRVT14_CKGTPLT_V5_1)
+ user
+
+Net inq_op[7]
+ upf_ls
+
+Net inq_op[6]
+ upf_ls
+
+Net inq_op[5]
+ upf_ls
+
+Net inq_op[4]
+ upf_ls
+
+Net inq_op[3]
+ upf_ls
+
+Net inq_op[2]
+ upf_ls
+
+Net inq_op[1]
+ upf_ls
+
+Net inq_op[0]
+ upf_ls
+
+Net inq_rnd_mode[1]
+ upf_ls
+
+Net inq_rnd_mode[0]
+ upf_ls
+
+Net inq_id[4]
+ upf_ls
+
+Net inq_id[3]
+ upf_ls
+
+Net inq_id[2]
+ upf_ls
+
+Net inq_id[1]
+ upf_ls
+
+Net inq_id[0]
+ upf_ls
+
+Net inq_in1[63]
+ upf_ls
+
+Net inq_in1[62]
+ upf_ls
+
+Net inq_in1[61]
+ upf_ls
+
+Net inq_in1[60]
+ upf_ls
+
+Net inq_in1[59]
+ upf_ls
+
+Net inq_in1[58]
+ upf_ls
+
+Net inq_in1[57]
+ upf_ls
+
+Net inq_in1[56]
+ upf_ls
+
+Net inq_in1[55]
+ upf_ls
+
+Net inq_in1[54]
+ upf_ls
+
+Net inq_in1[53]
+ upf_ls
+
+Net inq_in1[52]
+ upf_ls
+
+Net inq_in1[51]
+ upf_ls
+
+Net inq_in1[50]
+ upf_ls
+
+Net inq_in1[49]
+ upf_ls
+
+Net inq_in1[48]
+ upf_ls
+
+Net inq_in1[47]
+ upf_ls
+
+Net inq_in1[46]
+ upf_ls
+
+Net inq_in1[45]
+ upf_ls
+
+Net inq_in1[44]
+ upf_ls
+
+Net inq_in1[43]
+ upf_ls
+
+Net inq_in1[42]
+ upf_ls
+
+Net inq_in1[41]
+ upf_ls
+
+Net inq_in1[40]
+ upf_ls
+
+Net inq_in1[39]
+ upf_ls
+
+Net inq_in1[38]
+ upf_ls
+
+Net inq_in1[37]
+ upf_ls
+
+Net inq_in1[36]
+ upf_ls
+
+Net inq_in1[35]
+ upf_ls
+
+Net inq_in1[34]
+ upf_ls
+
+Net inq_in1[33]
+ upf_ls
+
+Net inq_in1[32]
+ upf_ls
+
+Net inq_in1[31]
+ upf_ls
+
+Net inq_in1[30]
+ upf_ls
+
+Net inq_in1[29]
+ upf_ls
+
+Net inq_in1[28]
+ upf_ls
+
+Net inq_in1[27]
+ upf_ls
+
+Net inq_in1[26]
+ upf_ls
+
+Net inq_in1[25]
+ upf_ls
+
+Net inq_in1[24]
+ upf_ls
+
+Net inq_in1[23]
+ upf_ls
+
+Net inq_in1[22]
+ upf_ls
+
+Net inq_in1[21]
+ upf_ls
+
+Net inq_in1[20]
+ upf_ls
+
+Net inq_in1[19]
+ upf_ls
+
+Net inq_in1[18]
+ upf_ls
+
+Net inq_in1[17]
+ upf_ls
+
+Net inq_in1[16]
+ upf_ls
+
+Net inq_in1[15]
+ upf_ls
+
+Net inq_in1[14]
+ upf_ls
+
+Net inq_in1[13]
+ upf_ls
+
+Net inq_in1[12]
+ upf_ls
+
+Net inq_in1[11]
+ upf_ls
+
+Net inq_in1[10]
+ upf_ls
+
+Net inq_in1[9]
+ upf_ls
+
+Net inq_in1[8]
+ upf_ls
+
+Net inq_in1[7]
+ upf_ls
+
+Net inq_in1[6]
+ upf_ls
+
+Net inq_in1[5]
+ upf_ls
+
+Net inq_in1[4]
+ upf_ls
+
+Net inq_in1[3]
+ upf_ls
+
+Net inq_in1[2]
+ upf_ls
+
+Net inq_in1[1]
+ upf_ls
+
+Net inq_in1[0]
+ upf_ls
+
+Net inq_in1_53_0_neq_0
+ upf_ls
+
+Net inq_in1_50_0_neq_0
+ upf_ls
+
+Net inq_in1_53_32_neq_0
+ upf_ls
+
+Net inq_in1_exp_eq_0
+ upf_ls
+
+Net inq_in1_exp_neq_ffs
+ upf_ls
+
+Net inq_in2[63]
+ upf_ls
+
+Net inq_in2[62]
+ upf_ls
+
+Net inq_in2[61]
+ upf_ls
+
+Net inq_in2[60]
+ upf_ls
+
+Net inq_in2[59]
+ upf_ls
+
+Net inq_in2[58]
+ upf_ls
+
+Net inq_in2[57]
+ upf_ls
+
+Net inq_in2[56]
+ upf_ls
+
+Net inq_in2[55]
+ upf_ls
+
+Net inq_in2[54]
+ upf_ls
+
+Net inq_in2[53]
+ upf_ls
+
+Net inq_in2[52]
+ upf_ls
+
+Net inq_in2[51]
+ upf_ls
+
+Net inq_in2[50]
+ upf_ls
+
+Net inq_in2[49]
+ upf_ls
+
+Net inq_in2[48]
+ upf_ls
+
+Net inq_in2[47]
+ upf_ls
+
+Net inq_in2[46]
+ upf_ls
+
+Net inq_in2[45]
+ upf_ls
+
+Net inq_in2[44]
+ upf_ls
+
+Net inq_in2[43]
+ upf_ls
+
+Net inq_in2[42]
+ upf_ls
+
+Net inq_in2[41]
+ upf_ls
+
+Net inq_in2[40]
+ upf_ls
+
+Net inq_in2[39]
+ upf_ls
+
+Net inq_in2[38]
+ upf_ls
+
+Net inq_in2[37]
+ upf_ls
+
+Net inq_in2[36]
+ upf_ls
+
+Net inq_in2[35]
+ upf_ls
+
+Net inq_in2[34]
+ upf_ls
+
+Net inq_in2[33]
+ upf_ls
+
+Net inq_in2[32]
+ upf_ls
+
+Net inq_in2[31]
+ upf_ls
+
+Net inq_in2[30]
+ upf_ls
+
+Net inq_in2[29]
+ upf_ls
+
+Net inq_in2[28]
+ upf_ls
+
+Net inq_in2[27]
+ upf_ls
+
+Net inq_in2[26]
+ upf_ls
+
+Net inq_in2[25]
+ upf_ls
+
+Net inq_in2[24]
+ upf_ls
+
+Net inq_in2[23]
+ upf_ls
+
+Net inq_in2[22]
+ upf_ls
+
+Net inq_in2[21]
+ upf_ls
+
+Net inq_in2[20]
+ upf_ls
+
+Net inq_in2[19]
+ upf_ls
+
+Net inq_in2[18]
+ upf_ls
+
+Net inq_in2[17]
+ upf_ls
+
+Net inq_in2[16]
+ upf_ls
+
+Net inq_in2[15]
+ upf_ls
+
+Net inq_in2[14]
+ upf_ls
+
+Net inq_in2[13]
+ upf_ls
+
+Net inq_in2[12]
+ upf_ls
+
+Net inq_in2[11]
+ upf_ls
+
+Net inq_in2[10]
+ upf_ls
+
+Net inq_in2[9]
+ upf_ls
+
+Net inq_in2[8]
+ upf_ls
+
+Net inq_in2[7]
+ upf_ls
+
+Net inq_in2[6]
+ upf_ls
+
+Net inq_in2[5]
+ upf_ls
+
+Net inq_in2[4]
+ upf_ls
+
+Net inq_in2[3]
+ upf_ls
+
+Net inq_in2[2]
+ upf_ls
+
+Net inq_in2[1]
+ upf_ls
+
+Net inq_in2[0]
+ upf_ls
+
+Net inq_in2_53_0_neq_0
+ upf_ls
+
+Net inq_in2_50_0_neq_0
+ upf_ls
+
+Net inq_in2_53_32_neq_0
+ upf_ls
+
+Net inq_in2_exp_eq_0
+ upf_ls
+
+Net inq_in2_exp_neq_ffs
+ upf_ls
+
+Net inq_mul
+ upf_ls
+
+Net mul_dest_rdy
+ upf_ls
+
+Net mul_dest_rdya
+ upf_ls
+
+Net fmul_clken_l
+ upf_ls
+
+Net fmul_clken_l_buf1
+ upf_ls
+
+Net arst_l
+ upf_ls
+
+Net grst_l
+ upf_ls
+
+Net rclk
+ CTS upf_ls
+
+Net se_mul
+ upf_ls
+
+Net se_mul64
+ upf_ls
+
+Net n334
+ CTS
+
+Net i_m4stg_frac/booth/out_dff9/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff8/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff7/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff10/clk
+ CTS
+
+Net fpu_mul_ctl/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/booth/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/ffrs1/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/psum_dff/clk
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clk
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clk
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clk
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_ctl/dffrl_mul_ctl/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in1_51/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in1_54/clk
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in1_53_0_neq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in1_50_0_neq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in1_53_32_neq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_exp_in1_exp_eq_0/clk
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_ctl/i_mul_exp_in1_exp_neq_ffs/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in2_51/clk
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in2_54/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in2_53_0_neq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in2_50_0_neq_0/clk
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_ctl/i_mul_frac_in2_53_32_neq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_exp_in2_exp_eq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_exp_in2_exp_neq_ffs/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_snan_in1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_snan_in2/clk
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_qnan_in1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_qnan_in2/clk
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_nan_in2/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_inf_in1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_inf_in2/clk
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_inf_in/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_zero_in1/clk
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_zero_in2/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_zero_in/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_op/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_mul/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_sngop/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_sngopa/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_dblop/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_dblopa/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_dblop_inv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_rnd_mode/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_id/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_opdec/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_opdec/net18925
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_rnd_mode/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_id/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_opdec/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_opdec/net18907
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_rnd_mode/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_id/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_opdec/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_opdec/net18907
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_rnd_mode/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_id/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_opdec/clk
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_opdec/net18907
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_rnd_mode/clk
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_id/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_opdec/clk
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_opdec/net18907
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_rnd_mode/clk
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_id/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_opdec/clk
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_opdec/net18907
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_rnd_mode/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_id/clk
+ CTS
+
+Net i_m4stg_frac/out_dff/clk
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clk
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_id/net18889
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_fmulda/clk
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clk
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_opdec/clk
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_opdec/net18871
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_opdec/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_opdec/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_id/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/pip_dff/clk
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_id/net18853
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_id/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m6stg_id/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_mul_pipe_active/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_sign1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m1stg_sign2/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_sign1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_sign2/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_sign/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_nv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_sign/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_nv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_sign/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_nv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3stg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_sign/clk
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_nv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_sign/clk
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_nv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m5stg_of_mask/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_sign_out/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_nv_out/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_of_out_tmp1/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_of_out_tmp2/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_of_out_cout/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_uf_out/clk
+ CTS
+
+Net fpu_mul_ctl/i_mul_nx_out/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_1/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_1/net18834
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_1/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_1/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_2/clk
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_2/net18834
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_2/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m2stg_ld0_2/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_ld0_inv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_ld0_inv/net18816
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_ld0_inv/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3astg_ld0_inv/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_ld0_inv/clk
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_ld0_inv/net18816
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_ld0_inv/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_ctl/i_m3bstg_ld0_inv/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_expadd_eq_0/clk
+ CTS
+
+Net fpu_mul_ctl/i_m4stg_right_shift/clk
+ CTS
+
+Net i_m4stg_frac/out_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_exp_dp/rclk
+ CTS
+
+Net fpu_mul_exp_dp/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_13
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_14
+ CTS
+
+Net i_m4stg_frac/pip_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/out_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_exp_dp/ckbuf_mul_exp_dp/clk
+ CTS
+
+Net fpu_mul_exp_dp/ckbuf_mul_exp_dp/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in1/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_15
+ CTS
+
+Net i_m4stg_frac/out_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_16
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_17
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_18
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_19
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_20
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_21
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clk
+ CTS
+
+Net i_m4stg_frac/out_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in1/net18780
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in1/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in1/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in2/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_22
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_23
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_24
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_25
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_26
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in2/net18780
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in2/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m1stg_exp_in2/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m2stg_exp/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_27
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_28
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_29
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_13
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_30
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_31
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_13
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_14
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_32
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_exp_dp/i_m2stg_exp/net18798
+ CTS
+
+Net fpu_mul_exp_dp/i_m2stg_exp/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m2stg_exp/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3astg_exp/clk
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_33
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_34
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_35
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_36
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_14
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_15
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_37
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_13
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_15
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_16
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_38
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_39
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_40
+ CTS
+
+Net fpu_mul_exp_dp/i_m3astg_exp/net18798
+ CTS
+
+Net fpu_mul_exp_dp/i_m3astg_exp/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3astg_exp/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3bstg_exp/clk
+ CTS
+
+Net fpu_mul_exp_dp/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre3/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre2/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre1/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre3/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre2/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_exp_pre1/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clk
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_exp_dp/i_m3bstg_exp/net18798
+ CTS
+
+Net fpu_mul_exp_dp/i_m3bstg_exp/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3bstg_exp/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_exp/clk
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_6
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_exp/net18798
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_exp/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_exp/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_expa/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_7
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_8
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/rclk
+ CTS
+
+Net i_m4stg_frac/ckbuf_0/rclk
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_1/rclk
+ CTS
+
+Net i_m4stg_frac/booth/clock_opt_cts_ZCTSNET_3
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_0/rclk
+ CTS
+
+Net fpu_mul_ctl/rclk
+ CTS
+
+Net clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_frac_dp/ckbuf_mul_frac_dp/rclk
+ CTS
+
+Net fpu_mul_frac_dp/clock_opt_cts_ZCTSNET_11
+ CTS
+
+Net fpu_mul_ctl/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_41
+ CTS
+
+Net i_m4stg_frac/booth/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_ctl/clock_opt_cts_ZCTSNET_2
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_expa/net18798
+ CTS
+
+Net clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_42
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_expa/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m3stg_expa/clk_gate_q_reg/ENCLK
+ CTS
+
+Net clock_opt_cts_ZCTSNET_5
+ CTS
+
+Net fpu_mul_exp_dp/i_m4stg_exp/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_m4stg_exp/net18798
+ CTS
+
+Net fpu_mul_exp_dp/i_m4stg_exp/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m4stg_exp/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_exp_dp/i_m5stg_inc_exp/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_mul_exp_out/clk
+ CTS
+
+Net fpu_mul_exp_dp/i_mul_exp_out/net18780
+ CTS
+
+Net fpu_mul_exp_dp/i_mul_exp_out/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_exp_dp/i_mul_exp_out/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/rclk
+ CTS
+
+Net fpu_mul_frac_dp/clk
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ccd_setup_0
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ccd_setup_0
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ccd_setup_0
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ccd_setup_0
+ CTS
+
+Net fpu_mul_frac_dp/ckbuf_mul_frac_dp/clk
+ CTS
+
+Net fpu_mul_frac_dp/ckbuf_mul_frac_dp/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/net18762
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in1/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/net18762
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_in2/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mstg_xtra_regs/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_mstg_xtra_regs/net18744
+ CTS
+
+Net fpu_mul_frac_dp/i_mstg_xtra_regs/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mstg_xtra_regs/clk_gate_q_reg/ENCLK
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre1/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre2/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre3/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_frac_dp/i_m5stg_frac_pre4/clock_opt_cts_ZCTSNET_9
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clk
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/net18726
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clk_gate_q_reg/CLK
+ CTS
+
+Net fpu_mul_frac_dp/i_mul_frac_out/clk_gate_q_reg/ENCLK
+ CTS
+
+Net i_m4stg_frac/clock_opt_cts_ZCTSNET_44
+ CTS
+
+Net i_m4stg_frac/clk_enb0
+ CTS
+
+Net i_m4stg_frac/clk_enb1
+ CTS
+
+Net i_m4stg_frac/ckbuf_0/clk
+ CTS
+
+Net i_m4stg_frac/ckbuf_0/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/cyc1_dff/clk
+ CTS
+
+Net i_m4stg_frac/cyc2_dff/clk
+ CTS
+
+Net i_m4stg_frac/cyc3_dff/clk
+ CTS
+
+Net i_m4stg_frac/ckbuf_1/clk
+ CTS
+
+Net i_m4stg_frac/ckbuf_1/rclk
+ CTS
+
+Net i_m4stg_frac/ffrs1/clk
+ CTS
+
+Net i_m4stg_frac/booth/clk
+ CTS
+
+Net i_m4stg_frac/booth/clk_enb0
+ CTS
+
+Net i_m4stg_frac/booth/clk_enb1
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_0/clk
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_0/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_1/clk
+ CTS
+
+Net i_m4stg_frac/booth/ckbuf_1/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/hld_dff0/clk
+ CTS
+
+Net i_m4stg_frac/booth/hld_dff/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff0/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff1/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff2/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff3/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff4/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff5/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff6/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff7/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/out_dff8/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/out_dff9/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/out_dff10/clock_opt_cts_ZCTSNET_0
+ CTS
+
+Net i_m4stg_frac/booth/out_dff11/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff12/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff13/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff14/clk
+ CTS
+
+Net i_m4stg_frac/booth/out_dff15/clk
+ CTS
+
+Net i_m4stg_frac/a0cot_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a0sum_dff/clock_opt_cts_ZCTSNET_10
+ CTS
+
+Net i_m4stg_frac/a1cot_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/a1sum_dff/clock_opt_cts_ZCTSNET_13
+ CTS
+
+Net i_m4stg_frac/a2cot_dff/clock_opt_cts_ZCTSNET_17
+ CTS
+
+Net i_m4stg_frac/a2sum_dff/clock_opt_cts_ZCTSNET_16
+ CTS
+
+Net i_m4stg_frac/psum_dff/clock_opt_cts_ZCTSNET_14
+ CTS
+
+Net i_m4stg_frac/pcout_dff/clock_opt_cts_ZCTSNET_12
+ CTS
+
+Net i_m4stg_frac/co31_dff/clk
+ CTS
+
+Net i_m4stg_frac/out_dff/clock_opt_cts_ZCTSNET_4
+ CTS
+
+Net i_m4stg_frac/pip_dff/clock_opt_cts_ZCTSNET_1
+ CTS
+
+Net eco_net
+ upf_ls
+
+Net eco_net_1
+ upf_ls
+
+Net eco_net_2
+ upf_ls
+
+Net eco_net_3
+ upf_ls
+
+Net eco_net_4
+ upf_ls
+
+Net eco_net_5
+ upf_ls
+
+Net eco_net_6
+ upf_ls
+
+Net eco_net_7
+ upf_ls
+
+Net eco_net_8
+ upf_ls
+
+Net eco_net_9
+ upf_ls
+
+Net eco_net_10
+ upf_ls
+
+Net eco_net_11
+ upf_ls
+
+Net eco_net_12
+ upf_ls
+
+Net eco_net_13
+ upf_ls
+
+Net eco_net_14
+ upf_ls
+
+Net eco_net_15
+ upf_ls
+
+Net eco_net_16
+ upf_ls
+
+Net eco_net_17
+ upf_ls
+
+Net eco_net_18
+ upf_ls
+
+Net eco_net_19
+ upf_ls
+
+Net eco_net_20
+ upf_ls
+
+Net eco_net_21
+ upf_ls
+
+Net eco_net_22
+ upf_ls
+
+Net eco_net_23
+ upf_ls
+
+Net eco_net_24
+ upf_ls
+
+Net eco_net_25
+ upf_ls
+
+Net eco_net_26
+ upf_ls
+
+Net eco_net_27
+ upf_ls
+
+Net eco_net_28
+ upf_ls
+
+Net eco_net_29
+ upf_ls
+
+Net eco_net_30
+ upf_ls
+
+Net eco_net_31
+ upf_ls
+
+Net eco_net_32
+ upf_ls
+
+Net eco_net_33
+ upf_ls
+
+Net eco_net_34
+ upf_ls
+
+Net eco_net_35
+ upf_ls
+
+Net eco_net_36
+ upf_ls
+
+Net eco_net_37
+ upf_ls
+
+Net eco_net_38
+ upf_ls
+
+Net eco_net_39
+ upf_ls
+
+Net eco_net_40
+ upf_ls
+
+Net eco_net_41
+ upf_ls
+
+Net eco_net_42
+ upf_ls
+
+Net eco_net_43
+ upf_ls
+
+Net eco_net_44
+ upf_ls
+
+Net eco_net_45
+ upf_ls
+
+Net eco_net_46
+ upf_ls
+
+Net eco_net_47
+ upf_ls
+
+Net eco_net_48
+ upf_ls
+
+Net eco_net_49
+ upf_ls
+
+Net eco_net_50
+ upf_ls
+
+Net eco_net_51
+ upf_ls
+
+Net eco_net_52
+ upf_ls
+
+Net eco_net_53
+ upf_ls
+
+Net eco_net_54
+ upf_ls
+
+Net eco_net_55
+ upf_ls
+
+Net eco_net_56
+ upf_ls
+
+Net eco_net_57
+ upf_ls
+
+Net eco_net_58
+ upf_ls
+
+Net eco_net_59
+ upf_ls
+
+Net eco_net_60
+ upf_ls
+
+Net eco_net_61
+ upf_ls
+
+Net eco_net_62
+ upf_ls
+
+Net eco_net_63
+ upf_ls
+
+Net eco_net_64
+ upf_ls
+
+Net eco_net_65
+ upf_ls
+
+Net eco_net_66
+ upf_ls
+
+Net eco_net_67
+ upf_ls
+
+Net eco_net_68
+ upf_ls
+
+Net eco_net_69
+ upf_ls
+
+Net eco_net_70
+ upf_ls
+
+Net eco_net_71
+ upf_ls
+
+Net eco_net_72
+ upf_ls
+
+Net eco_net_73
+ upf_ls
+
+Net eco_net_74
+ upf_ls
+
+Net eco_net_75
+ upf_ls
+
+Net eco_net_76
+ upf_ls
+
+Net eco_net_77
+ upf_ls
+
+Net eco_net_78
+ upf_ls
+
+Net eco_net_79
+ upf_ls
+
+Net eco_net_80
+ upf_ls
+
+Net eco_net_81
+ upf_ls
+
+Net eco_net_82
+ upf_ls
+
+Net eco_net_83
+ upf_ls
+
+Net eco_net_84
+ upf_ls
+
+Net eco_net_85
+ upf_ls
+
+Net eco_net_86
+ upf_ls
+
+Net eco_net_87
+ upf_ls
+
+Net eco_net_88
+ upf_ls
+
+Net eco_net_89
+ upf_ls
+
+Net eco_net_90
+ upf_ls
+
+Net eco_net_91
+ upf_ls
+
+Net eco_net_92
+ upf_ls
+
+Net eco_net_93
+ upf_ls
+
+Net eco_net_94
+ upf_ls
+
+Net eco_net_95
+ upf_ls
+
+Net eco_net_96
+ upf_ls
+
+Net eco_net_97
+ upf_ls
+
+Net eco_net_98
+ upf_ls
+
+Net eco_net_99
+ upf_ls
+
+Net eco_net_100
+ upf_ls
+
+Net eco_net_101
+ upf_ls
+
+Net eco_net_102
+ upf_ls
+
+Net eco_net_103
+ upf_ls
+
+Net eco_net_104
+ upf_ls
+
+Net eco_net_105
+ upf_ls
+
+Net eco_net_106
+ upf_ls
+
+Net eco_net_107
+ upf_ls
+
+Net eco_net_108
+ upf_ls
+
+Net eco_net_109
+ upf_ls
+
+Net eco_net_110
+ upf_ls
+
+Net eco_net_111
+ upf_ls
+
+Net eco_net_112
+ upf_ls
+
+Net eco_net_113
+ upf_ls
+
+Net eco_net_114
+ upf_ls
+
+Net eco_net_115
+ upf_ls
+
+Net eco_net_116
+ upf_ls
+
+Net eco_net_117
+ upf_ls
+
+Net eco_net_118
+ upf_ls
+
+Net eco_net_119
+ upf_ls
+
+Net eco_net_120
+ upf_ls
+
+Net eco_net_121
+ upf_ls
+
+Net eco_net_122
+ upf_ls
+
+Net eco_net_123
+ upf_ls
+
+Net eco_net_124
+ upf_ls
+
+Net eco_net_125
+ upf_ls
+
+Net eco_net_126
+ upf_ls
+
+Net eco_net_127
+ upf_ls
+
+Net eco_net_128
+ upf_ls
+
+Net eco_net_129
+ upf_ls
+
+Net eco_net_130
+ upf_ls
+
+Net eco_net_131
+ upf_ls
+
+Net eco_net_132
+ upf_ls
+
+Net eco_net_133
+ upf_ls
+
+Net eco_net_134
+ upf_ls
+
+Net eco_net_135
+ upf_ls
+
+Net eco_net_136
+ upf_ls
+
+Net eco_net_137
+ upf_ls
+
+Net eco_net_138
+ upf_ls
+
+Net eco_net_139
+ upf_ls
+
+Net eco_net_140
+ upf_ls
+
+Net eco_net_141
+ upf_ls
+
+Net eco_net_142
+ upf_ls
+
+Net eco_net_143
+ upf_ls
+
+Net eco_net_144
+ upf_ls
+
+Net eco_net_145
+ upf_ls
+
+Net eco_net_146
+ upf_ls
+
+Net eco_net_147
+ upf_ls
+
+Net eco_net_148
+ upf_ls
+
+Net eco_net_149
+ upf_ls
+
+Net eco_net_150
+ upf_ls
+
+Net eco_net_151
+ upf_ls
+
+Net eco_net_152
+ upf_ls
+
+Net eco_net_153
+ upf_ls
+
+Net eco_net_154
+ upf_ls
+
+Net eco_net_155
+ upf_ls
+
+Net eco_net_156
+ upf_ls
+
+Net eco_net_157
+ upf_ls
+
+Net eco_net_158
+ upf_ls
+
+Net eco_net_159
+ upf_ls
+
+Net eco_net_160
+ CTS upf_ls
+
+Net eco_net_245
+ upf_ls
+
+Net eco_net_246
+ upf_ls
+32 of 16620 instances are dont_touch
+838 of 50076 nets are dont_touch
+1

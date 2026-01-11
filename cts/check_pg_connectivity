@@ -1,0 +1,53 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VDDo    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 13709
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 7510
+Number of VDD Vias: 9216
+Number of VDD Terminals: 12
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VDDo Wires: 20
+Number of VDDo Vias: 513
+Number of VDDo Terminals: 11
+**************Verify net VDDo connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 400
+  Number of floating std cells: 162
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 6848
+Number of VSS Vias: 8448
+Number of VSS Terminals: 11
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{VIA_S_99035 VIA_S_99036 VIA_S_99037 VIA_S_99038 VIA_S_99039 VIA_S_99040 VIA_S_99041 VIA_S_99042 VIA_S_99043 VIA_S_99044 VIA_S_99045 VIA_S_99046 VIA_S_99047 VIA_S_99048 VIA_S_99049 VIA_S_99050 VIA_S_99051 VIA_S_99052 VIA_S_99053 VIA_S_99054 VIA_S_99055 VIA_S_99056 VIA_S_99057 VIA_S_99058 VIA_S_99059 VIA_S_99060 VIA_S_99061 VIA_S_99062 VIA_S_99063 VIA_S_99064 VIA_S_99065 VIA_S_99066 VIA_S_99067 VIA_S_99068 VIA_S_99069 VIA_S_99070 VIA_S_99071 VIA_S_99072 VIA_S_99073 VIA_S_99074 VIA_S_99075 VIA_S_99076 VIA_S_99077 VIA_S_99078 VIA_S_99079 VIA_S_99080 VIA_S_99081 VIA_S_99082 VIA_S_99083 VIA_S_99084 VIA_S_99085 VIA_S_99086 VIA_S_99087 VIA_S_99088 VIA_S_99089 VIA_S_99090 VIA_S_99091 VIA_S_99092 VIA_S_99093 VIA_S_99094 VIA_S_99095 VIA_S_99096 VIA_S_99097 VIA_S_99098 VIA_S_99099 VIA_S_99100 VIA_S_99101 VIA_S_99102 VIA_S_99103 VIA_S_99104 VIA_S_99105 VIA_S_99106 VIA_S_99107 VIA_S_99108 VIA_S_99109 VIA_S_99110 VIA_S_99111 VIA_S_99112 VIA_S_99113 VIA_S_99114 VIA_S_99115 VIA_S_99116 VIA_S_99117 VIA_S_99118 VIA_S_99119 VIA_S_99120 VIA_S_99121 VIA_S_99122 VIA_S_99123 VIA_S_99124 VIA_S_99125 VIA_S_99126 VIA_S_99127 VIA_S_99128 VIA_S_99129 VIA_S_99130 VIA_S_99131 VIA_S_99132 VIA_S_99133 VIA_S_99134 ...}

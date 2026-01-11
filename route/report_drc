@@ -1,0 +1,23 @@
+****************************************
+Report : Report drc errors
+Design : fpu_mul
+Data   : zroute.err
+Type   : error_type
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:10:14 2025
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : fpu_mul                            45      45          0       0
+      Data : zroute.err                     45      45          0       0
+            Diff net spacing                13      13          0       0
+                M1 (19)                     13      13          0       0
+            Edge-line via spacing           5       5           0       0
+                M1 (19)                     5       5           0       0
+            Same net via-cut spacing        13      13          0       0
+                VIA1 (20)                   12      12          0       0
+                VIA1 (20)-VIA2 (22)         1       1           0       0
+            Short                           14      14          0       0
+                M1 (19)                     14      14          0       0
+1

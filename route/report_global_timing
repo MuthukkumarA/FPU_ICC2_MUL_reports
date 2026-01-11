@@ -1,0 +1,17 @@
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : fpu_mul
+Version: T-2022.03-SP4
+Date   : Mon Aug 11 19:09:46 2025
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1
